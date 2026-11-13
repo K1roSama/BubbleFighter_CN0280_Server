@@ -1,0 +1,14 @@
+{
+  "certificate": "certificates/gateway.pem",
+  "private_key": "certificates/gateway.key",
+  "authority": "certificates/room_ca.pem",
+  "maximum_rooms": 1024,
+  "maximum_commands": 4096,
+  "maximum_queued_bytes": 67108864,
+  "room_capacity": 12,
+  "drain_marker": "gateway.drain",
+  "nodes": [
+    {"name": "room_node_01", "host": "10.0.0.21", "port": 7443, "peer_name": "room-node-01.internal"},
+    {"name": "room_node_02", "host": "10.0.0.22", "port": 7443, "peer_name": "room-node-02.internal"}
+  ]
+}

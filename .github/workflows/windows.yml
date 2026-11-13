@@ -1,0 +1,141 @@
+name: Windows CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: windows-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: pwsh
+
+env:
+  VCPKG_DISABLE_METRICS: '1'
+  VCPKG_MAX_CONCURRENCY: '4'
+
+jobs:
+  dependencies:
+    name: Native dependencies
+    runs-on: windows-2022
+    timeout-minutes: 60
+    outputs:
+      cache-key: ${{ steps.key.outputs.value }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Compute dependency cache key
+        id: key
+        env:
+          INPUT_HASH: ${{ hashFiles('vcpkg.json', 'triplets/**', 'build/dependencies.json', 'build/restore_dependencies.ps1', 'build/fetch_mysql_sdk.ps1', 'build/check_mysql_sdk.ps1') }}
+        run: |
+          "value=windows-2022-$env:ImageVersion-v143-$env:INPUT_HASH" >> $env:GITHUB_OUTPUT
+      - name: Cache native dependencies
+        id: cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            Artifacts/Dependencies/vcpkg
+            Artifacts/Dependencies/mysql-8.4.11-winx64
+          key: ${{ steps.key.outputs.value }}
+      - name: Fetch and verify MySQL client SDK
+        run: ./build/fetch_mysql_sdk.ps1
+      - name: Check out the pinned vcpkg baseline
+        if: steps.cache.outputs.cache-hit != 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: microsoft/vcpkg
+          ref: 9e44ec0e9f247d77c230ced0ee66c76296837807
+          path: Artifacts/vcpkg
+          persist-credentials: false
+      - name: Bootstrap vcpkg
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          & ./Artifacts/vcpkg/bootstrap-vcpkg.bat -disableMetrics
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Restore C++ dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          ./build/restore_dependencies.ps1 -VcpkgRoot "$PWD/Artifacts/vcpkg"
+      - name: Upload dependency diagnostics
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: dependency-logs
+          path: Artifacts/vcpkg/buildtrees/**/*.log
+          if-no-files-found: ignore
+          retention-days: 7
+
+  build:
+    name: ${{ matrix.configuration }} x64
+    needs: dependencies
+    runs-on: windows-2022
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        configuration: [Debug, Release]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - uses: microsoft/setup-msbuild@30375c66a4eea26614e0d39710365f22f8b0af57 # v3
+        with:
+          vs-version: '[17.0,18.0)'
+          msbuild-architecture: x64
+      - name: Restore native dependencies
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            Artifacts/Dependencies/vcpkg
+            Artifacts/Dependencies/mysql-8.4.11-winx64
+          key: ${{ needs.dependencies.outputs.cache-key }}
+          fail-on-cache-miss: true
+      - name: Build the single server project
+        env:
+          CONFIGURATION: ${{ matrix.configuration }}
+        run: |
+          New-Item -ItemType Directory -Path Artifacts/Checks -Force | Out-Null
+          & msbuild BubbleFighter.Server.sln /t:Rebuild /m:1 /nologo /v:minimal `
+            "/p:Configuration=$env:CONFIGURATION" /p:Platform=x64 /p:CL_MPCount=2 `
+            '/p:PythonForBuild=python' /fl `
+            "/flp:LogFile=Artifacts/Checks/$env:CONFIGURATION.log;Verbosity=normal;Encoding=UTF-8"
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Check executable and default configuration
+        env:
+          CONFIGURATION: ${{ matrix.configuration }}
+        run: |
+          $server = Join-Path $PWD "Artifacts/Bin/x64/$env:CONFIGURATION/BubbleFighter.Server.exe"
+          & $server --help
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          & $server --check-config
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Package the Release runtime
+        if: matrix.configuration == 'Release'
+        run: python build/package_release.py
+      - name: Upload Release package
+        if: matrix.configuration == 'Release'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: Windows-x64-release
+          path: |
+            Artifacts/Packages/BubbleFighter-CN0280-Server-win-x64.zip
+            Artifacts/Packages/SHA256SUMS
+          if-no-files-found: error
+          retention-days: 14
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: build-log-${{ matrix.configuration }}
+          path: Artifacts/Checks/*.log
+          if-no-files-found: ignore
+          retention-days: 14

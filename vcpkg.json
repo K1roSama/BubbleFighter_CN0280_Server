@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "bubble-fighter-server",
+  "version-string": "0.1.0-p1",
+  "builtin-baseline": "9e44ec0e9f247d77c230ced0ee66c76296837807",
+  "dependencies": [
+    {
+      "name": "boost-asio",
+      "default-features": false
+    },
+    "nlohmann-json",
+    "openssl",
+    "spdlog"
+  ]
+}

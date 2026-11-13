@@ -1,0 +1,52 @@
+{
+  "client_build": 752,
+  "policy": {
+    "defaults": {
+      "lucci": {
+        "bubble": 4,
+        "draw": 20,
+        "finish": 50,
+        "first": 20,
+        "help": 4,
+        "loss": 0,
+        "pang": 8,
+        "second": 10,
+        "third": 5,
+        "win": 40
+      },
+      "rating": {
+        "bubble": 0,
+        "draw": 0,
+        "finish": 0,
+        "first": 3,
+        "help": 0,
+        "loss": -10,
+        "pang": 0,
+        "second": 2,
+        "third": 1,
+        "win": 15
+      },
+      "xp": {
+        "bubble": 3,
+        "draw": 15,
+        "finish": 30,
+        "first": 15,
+        "help": 3,
+        "loss": 0,
+        "pang": 5,
+        "second": 10,
+        "third": 5,
+        "win": 30
+      }
+    },
+    "level_step": 500,
+    "maximum_level": 200,
+    "minimum_players": 2,
+    "minimum_seconds": 15,
+    "modes": {},
+    "version": 1
+  },
+  "publisher_version": "reward-rules-publish-v1",
+  "schema_version": 1,
+  "source": "local_server/config/rewards.json"
+}

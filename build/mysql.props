@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MySqlRoot Condition="'$(MySqlRoot)'==''">$(BfArtifacts)Dependencies\mysql-8.4.11-winx64</MySqlRoot>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MySqlRoot)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(MySqlRoot)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Target Name="CheckMySqlDependency" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('$(MySqlRoot)\include\mysql.h') Or !Exists('$(MySqlRoot)\lib\libmysql.lib') Or !Exists('$(MySqlRoot)\lib\libmysql.dll') Or !Exists('$(MySqlRoot)\bin\libssl-3-x64.dll') Or !Exists('$(MySqlRoot)\bin\libcrypto-3-x64.dll')"
+           Text="Set MySqlRoot to the extracted Oracle MySQL 8.4.11 x64 SDK." />
+    <Exec Command="powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File &quot;$(BfRoot)build\check_mysql_sdk.ps1&quot; -MySqlRoot &quot;$(MySqlRoot)&quot;" />
+  </Target>
+  <Target Name="CopyMySqlRuntime" AfterTargets="Build" Condition="'$(ConfigurationType)'=='Application'">
+    <Copy SourceFiles="$(MySqlRoot)\lib\libmysql.dll;$(MySqlRoot)\bin\libssl-3-x64.dll;$(MySqlRoot)\bin\libcrypto-3-x64.dll" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

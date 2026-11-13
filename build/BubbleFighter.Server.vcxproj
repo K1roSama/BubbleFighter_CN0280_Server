@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{A0519F9D-073D-5E2F-944E-2D337F27C965}</ProjectGuid>
+    <RootNamespace>BubbleFighter.Server</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <TargetName>BubbleFighter.Server</TargetName>
+  </PropertyGroup>
+  <Import Project="common.props" />
+  <ItemDefinitionGroup>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>secur32.lib;libssl.lib;bcrypt.lib;libcrypto.lib;crypt32.lib;ws2_32.lib;spdlogd.lib;fmtd.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>secur32.lib;libssl.lib;bcrypt.lib;libcrypto.lib;crypt32.lib;ws2_32.lib;spdlog.lib;fmt.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="mysql.props" />
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp">
+      <ObjectFileName>$(IntDir)main_34d21af3.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;BF_HAS_ROOM_DS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\application\game_main.cpp">
+      <ObjectFileName>$(IntDir)game_main_0be83ba4.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;BF_HAS_ROOM_DS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\admin_main.cpp">
+      <ObjectFileName>$(IntDir)admin_main_a7d6573f.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;BF_HAS_ROOM_DS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\admin\moderation.cpp">
+      <ObjectFileName>$(IntDir)moderation_cdafa080.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;BF_HAS_ROOM_DS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\migrate_main.cpp">
+      <ObjectFileName>$(IntDir)migrate_main_803e441c.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;BF_HAS_ROOM_DS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\ds_agent_main.cpp">
+      <ObjectFileName>$(IntDir)ds_agent_main_aa9fae50.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;BF_HAS_ROOM_DS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\application\login_main.cpp">
+      <ObjectFileName>$(IntDir)login_main_8301bc47.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;BF_HAS_ROOM_DS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\room_ds_main.cpp">
+      <ObjectFileName>$(IntDir)room_ds_main_fc6c4511.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;BF_HAS_ROOM_DS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\features\configuration\server_config.cpp">
+      <ObjectFileName>$(IntDir)server_config_c1523f60.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\async_file_logger.cpp">
+      <ObjectFileName>$(IntDir)async_file_logger_ce213bf3.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\file_life_attendance_journal.cpp">
+      <ObjectFileName>$(IntDir)file_life_attendance_journal_5959b734.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_credential_crypto.cpp">
+      <ObjectFileName>$(IntDir)openssl_credential_crypto_7f52f8ff.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_match_id_source.cpp">
+      <ObjectFileName>$(IntDir)openssl_match_id_source_d11cb8e1.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_operation_id_source.cpp">
+      <ObjectFileName>$(IntDir)openssl_operation_id_source_546e1d8c.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_sha256.cpp">
+      <ObjectFileName>$(IntDir)openssl_sha256_99b12338.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_treasure_random_source.cpp">
+      <ObjectFileName>$(IntDir)openssl_treasure_random_source_6f54079a.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_workshop_random_source.cpp">
+      <ObjectFileName>$(IntDir)openssl_workshop_random_source_66701138.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\windows_cng_credential_crypto.cpp">
+      <ObjectFileName>$(IntDir)windows_cng_credential_crypto_eedf9db8.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\windows_cng_match_id_source.cpp">
+      <ObjectFileName>$(IntDir)windows_cng_match_id_source_bad9c473.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\windows_cng_operation_id_source.cpp">
+      <ObjectFileName>$(IntDir)windows_cng_operation_id_source_2bca4993.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\windows_cng_sha256.cpp">
+      <ObjectFileName>$(IntDir)windows_cng_sha256_3b5246ba.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\database_task_pool.cpp">
+      <ObjectFileName>$(IntDir)database_task_pool_089faa1b.obj</ObjectFileName>
+      <PreprocessorDefinitions>JUICE_STATIC;BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\authentication.cpp">
+      <ObjectFileName>$(IntDir)authentication_b458f589.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\character_creation.cpp">
+      <ObjectFileName>$(IntDir)character_creation_429d92a2.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\clans\clan_service.cpp">
+      <ObjectFileName>$(IntDir)clan_service_c82d4064.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\key_map.cpp">
+      <ObjectFileName>$(IntDir)key_map_c8034ce8.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\equipment_service.cpp">
+      <ObjectFileName>$(IntDir)equipment_service_1b4da1c7.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\item_use_service.cpp">
+      <ObjectFileName>$(IntDir)item_use_service_c401a705.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\inventory_discard.cpp">
+      <ObjectFileName>$(IntDir)inventory_discard_9049893b.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\native_title_profile.cpp">
+      <ObjectFileName>$(IntDir)native_title_profile_407732c0.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\application\error.cpp">
+      <ObjectFileName>$(IntDir)error_70276d46.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\application\event_logger.cpp">
+      <ObjectFileName>$(IntDir)event_logger_05bc964a.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\launcher_authentication.cpp">
+      <ObjectFileName>$(IntDir)launcher_authentication_ee19cb3e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_lifecycle_repair.cpp">
+      <ObjectFileName>$(IntDir)match_lifecycle_repair_bf3a78cd.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_preparation.cpp">
+      <ObjectFileName>$(IntDir)match_preparation_76f5ab71.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_start.cpp">
+      <ObjectFileName>$(IntDir)match_start_1382d79e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_settlement.cpp">
+      <ObjectFileName>$(IntDir)match_settlement_3ff411e1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_terminal.cpp">
+      <ObjectFileName>$(IntDir)match_terminal_6bc221ab.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\mystery_shop_service.cpp">
+      <ObjectFileName>$(IntDir)mystery_shop_service_d0b04b95.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\lobby\player_menu_snapshot.cpp">
+      <ObjectFileName>$(IntDir)player_menu_snapshot_94120f97.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\purchase_service.cpp">
+      <ObjectFileName>$(IntDir)purchase_service_30cc836c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\configuration\service_rules.cpp">
+      <ObjectFileName>$(IntDir)service_rules_7823b472.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\shop_catalog.cpp">
+      <ObjectFileName>$(IntDir)shop_catalog_443ed4df.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\social\social_query.cpp">
+      <ObjectFileName>$(IntDir)social_query_be007592.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\social\social_service.cpp">
+      <ObjectFileName>$(IntDir)social_service_ca551d98.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\treasure_service.cpp">
+      <ObjectFileName>$(IntDir)treasure_service_43f0adf5.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\workshop_service.cpp">
+      <ObjectFileName>$(IntDir)workshop_service_2d6378b2.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\world_access.cpp">
+      <ObjectFileName>$(IntDir)world_access_834cda21.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\account_credentials.cpp">
+      <ObjectFileName>$(IntDir)account_credentials_cec3fe8a.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\character.cpp">
+      <ObjectFileName>$(IntDir)character_d0492a63.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\clothing_set.cpp">
+      <ObjectFileName>$(IntDir)clothing_set_0b370553.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\clothing_attributes.cpp">
+      <ObjectFileName>$(IntDir)clothing_attributes_cc338dc3.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\hotblood_stats.cpp">
+      <ObjectFileName>$(IntDir)hotblood_stats_fc460068.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\application\identifier.cpp">
+      <ObjectFileName>$(IntDir)identifier_2bb6a9d9.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_id.cpp">
+      <ObjectFileName>$(IntDir)match_id_26ad11ad.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_result.cpp">
+      <ObjectFileName>$(IntDir)match_result_be4d93be.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_reward.cpp">
+      <ObjectFileName>$(IntDir)match_reward_7b0e30ca.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\nickname.cpp">
+      <ObjectFileName>$(IntDir)nickname_18dae857.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\name_policy.cpp">
+      <ObjectFileName>$(IntDir)name_policy_be4a6e09.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\chat\message_policy.cpp">
+      <ObjectFileName>$(IntDir)message_policy_63207708.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\application\operation_id.cpp">
+      <ObjectFileName>$(IntDir)operation_id_41d4e0b4.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\purchase.cpp">
+      <ObjectFileName>$(IntDir)purchase_c800ce00.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\chat\user_message.cpp">
+      <ObjectFileName>$(IntDir)user_message_d49654e3.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\application\utf8.cpp">
+      <ObjectFileName>$(IntDir)utf8_900cf183.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\internal\room_envelope.cpp">
+      <ObjectFileName>$(IntDir)room_envelope_568dabbe.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\chat\chat_block_messages.cpp">
+      <ObjectFileName>$(IntDir)chat_block_messages_f9f30fe4.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\lobby\lobby_minigame_messages.cpp">
+      <ObjectFileName>$(IntDir)lobby_minigame_messages_72325b8a.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\chat\chat_messages.cpp">
+      <ObjectFileName>$(IntDir)chat_messages_5eaf13dd.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\clans\clan_messages.cpp">
+      <ObjectFileName>$(IntDir)clan_messages_c5901481.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\equipment_relay_messages.cpp">
+      <ObjectFileName>$(IntDir)equipment_relay_messages_819fc1c8.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\key_map_messages.cpp">
+      <ObjectFileName>$(IntDir)key_map_messages_ee59b67a.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\combat_messages.cpp">
+      <ObjectFileName>$(IntDir)combat_messages_c473d9df.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\extreme_racing_messages.cpp">
+      <ObjectFileName>$(IntDir)extreme_racing_messages_91bc2a36.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\special_mode_messages.cpp">
+      <ObjectFileName>$(IntDir)special_mode_messages_f2aff6c6.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\frame_codec.cpp">
+      <ObjectFileName>$(IntDir)frame_codec_35c0e63f.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\fighter_ranking_messages.cpp">
+      <ObjectFileName>$(IntDir)fighter_ranking_messages_7772e205.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\gateway_messages.cpp">
+      <ObjectFileName>$(IntDir)gateway_messages_7d30954f.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\inventory_messages.cpp">
+      <ObjectFileName>$(IntDir)inventory_messages_a02ceb38.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\limits.cpp">
+      <ObjectFileName>$(IntDir)limits_310f3a11.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\match_transition_messages.cpp">
+      <ObjectFileName>$(IntDir)match_transition_messages_2ac7e6fe.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\weapon_master_messages.cpp">
+      <ObjectFileName>$(IntDir)weapon_master_messages_36136ffe.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\lobby\menu_messages.cpp">
+      <ObjectFileName>$(IntDir)menu_messages_cf0b70f9.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\native_progression_messages.cpp">
+      <ObjectFileName>$(IntDir)native_progression_messages_a30103e0.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\npc_messages.cpp">
+      <ObjectFileName>$(IntDir)npc_messages_d22dd642.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\mystery_shop_messages.cpp">
+      <ObjectFileName>$(IntDir)mystery_shop_messages_49be9e17.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\packet_io.cpp">
+      <ObjectFileName>$(IntDir)packet_io_d4af7fb4.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\plaza_messages.cpp">
+      <ObjectFileName>$(IntDir)plaza_messages_d0147ca1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\room_messages.cpp">
+      <ObjectFileName>$(IntDir)room_messages_d718d428.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\scene_messages.cpp">
+      <ObjectFileName>$(IntDir)scene_messages_220f439f.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\scene_session_messages.cpp">
+      <ObjectFileName>$(IntDir)scene_session_messages_e0ff0ed9.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\shop_catalog_messages.cpp">
+      <ObjectFileName>$(IntDir)shop_catalog_messages_d1d8590f.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\social\social_messages.cpp">
+      <ObjectFileName>$(IntDir)social_messages_83222d0d.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\social\couple_messages.cpp">
+      <ObjectFileName>$(IntDir)couple_messages_c5e0de70.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\smart_ping_messages.cpp">
+      <ObjectFileName>$(IntDir)smart_ping_messages_09adbcce.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\text_codec.cpp">
+      <ObjectFileName>$(IntDir)text_codec_3fb4b66c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\treasure_messages.cpp">
+      <ObjectFileName>$(IntDir)treasure_messages_caf5b30b.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\user_host_messages.cpp">
+      <ObjectFileName>$(IntDir)user_host_messages_9e27631e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\workshop_messages.cpp">
+      <ObjectFileName>$(IntDir)workshop_messages_e594eeef.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\network\launcher_authentication_handler.cpp">
+      <ObjectFileName>$(IntDir)launcher_authentication_handler_21783d6a.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\clan_tcp_server.cpp">
+      <ObjectFileName>$(IntDir)clan_tcp_server_6beaf4dd.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\gateway_opcode_routes.cpp">
+      <ObjectFileName>$(IntDir)gateway_opcode_routes_00c5ea67.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\gateway_session_handler.cpp">
+      <ObjectFileName>$(IntDir)gateway_session_handler_14a23e31.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\gift_handler.cpp">
+      <ObjectFileName>$(IntDir)gift_handler_af7bd994.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\operational_http_server.cpp">
+      <ObjectFileName>$(IntDir)operational_http_server_214523fc.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\tcp_server.cpp">
+      <ObjectFileName>$(IntDir)tcp_server_0ec13e21.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\equipment_relay_handler.cpp">
+      <ObjectFileName>$(IntDir)equipment_relay_handler_fdabc17f.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\ice_network_service.cpp">
+      <ObjectFileName>$(IntDir)ice_network_service_1ca95e35.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;JUICE_STATIC;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_relay.cpp">
+      <ObjectFileName>$(IntDir)combat_relay_9abbf0d4.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_relay_smart_ping.cpp">
+      <ObjectFileName>$(IntDir)combat_relay_smart_ping_c1ed294b.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_storm.cpp">
+      <ObjectFileName>$(IntDir)combat_storm_acb3d4e2.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_survival.cpp">
+      <ObjectFileName>$(IntDir)combat_survival_c625010a.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_survival_trap.cpp">
+      <ObjectFileName>$(IntDir)combat_survival_trap_b60ee5eb.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_survival_melee.cpp">
+      <ObjectFileName>$(IntDir)combat_survival_melee_8529f037.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_loot.cpp">
+      <ObjectFileName>$(IntDir)survival_loot_4fb86083.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_tide.cpp">
+      <ObjectFileName>$(IntDir)survival_tide_35b75a5e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_survival_water.cpp">
+      <ObjectFileName>$(IntDir)combat_survival_water_0472c98e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_loot_objectives.cpp">
+      <ObjectFileName>$(IntDir)survival_loot_objectives_997cb00c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_backpack.cpp">
+      <ObjectFileName>$(IntDir)survival_backpack_9eb94187.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_backpack_objectives.cpp">
+      <ObjectFileName>$(IntDir)survival_backpack_objectives_af3dea9c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_item_effects.cpp">
+      <ObjectFileName>$(IntDir)combat_item_effects_8e741e35.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_turret.cpp">
+      <ObjectFileName>$(IntDir)combat_turret_840e9d52.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_deathmatch_fever.cpp">
+      <ObjectFileName>$(IntDir)combat_deathmatch_fever_f19e7295.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_objectives.cpp">
+      <ObjectFileName>$(IntDir)match_objectives_90c0fd3b.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\event_mole_profile.cpp">
+      <ObjectFileName>$(IntDir)event_mole_profile_ae54c06e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\event_mole_objects.cpp">
+      <ObjectFileName>$(IntDir)event_mole_objects_475dc8cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\bomb_maps.cpp">
+      <ObjectFileName>$(IntDir)bomb_maps_134d3652.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\native_team_spawn.cpp">
+      <ObjectFileName>$(IntDir)native_team_spawn_6babd293.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\native_wb_scene.cpp">
+      <ObjectFileName>$(IntDir)native_wb_scene_98231c91.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\native_x_stream.cpp">
+      <ObjectFileName>$(IntDir)native_x_stream_c6ab9eaa.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\native_x_scene.cpp">
+      <ObjectFileName>$(IntDir)native_x_scene_74c2e3a9.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\soccer_objectives.cpp">
+      <ObjectFileName>$(IntDir)soccer_objectives_6c574dd4.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\loot_objectives.cpp">
+      <ObjectFileName>$(IntDir)loot_objectives_c98d2127.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\pirate_coin_objectives.cpp">
+      <ObjectFileName>$(IntDir)pirate_coin_objectives_037009ad.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\weapon_drop_objectives.cpp">
+      <ObjectFileName>$(IntDir)weapon_drop_objectives_947c9b1f.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\pirate_match.cpp">
+      <ObjectFileName>$(IntDir)pirate_match_c03bee6b.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\horde_tutor_match.cpp">
+      <ObjectFileName>$(IntDir)horde_tutor_match_ecc20766.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\horde_tutor_profile.cpp">
+      <ObjectFileName>$(IntDir)horde_tutor_profile_e48f6258.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\infection_match.cpp">
+      <ObjectFileName>$(IntDir)infection_match_3bf5da7e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\infection_combat.cpp">
+      <ObjectFileName>$(IntDir)infection_combat_55335f3e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\infection_fever.cpp">
+      <ObjectFileName>$(IntDir)infection_fever_e3a28515.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\weapon_master_match.cpp">
+      <ObjectFileName>$(IntDir)weapon_master_match_2beaf92b.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\extreme_racing_maps.cpp">
+      <ObjectFileName>$(IntDir)extreme_racing_maps_b268573d.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\extreme_racing_scene.cpp">
+      <ObjectFileName>$(IntDir)extreme_racing_scene_0a80f3b9.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\extreme_racing_match.cpp">
+      <ObjectFileName>$(IntDir)extreme_racing_match_90284eea.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\crazy_racing_match.cpp">
+      <ObjectFileName>$(IntDir)crazy_racing_match_13bf7e00.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\captain_assignments.cpp">
+      <ObjectFileName>$(IntDir)captain_assignments_65767d0d.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\captain_defeat.cpp">
+      <ObjectFileName>$(IntDir)captain_defeat_2c3e73bb.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\captain_fever.cpp">
+      <ObjectFileName>$(IntDir)captain_fever_99613c99.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\zombie_pve_match.cpp">
+      <ObjectFileName>$(IntDir)zombie_pve_match_a9bb27c0.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\zombie_pve_score.cpp">
+      <ObjectFileName>$(IntDir)zombie_pve_score_49115ffa.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\pirate_map_agents.cpp">
+      <ObjectFileName>$(IntDir)pirate_map_agents_c3182873.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\horde_guardians.cpp">
+      <ObjectFileName>$(IntDir)horde_guardians_3b62e7f9.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\pirate_maps.cpp">
+      <ObjectFileName>$(IntDir)pirate_maps_e2ada474.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\zombie_pve_maps.cpp">
+      <ObjectFileName>$(IntDir)zombie_pve_maps_fbd1252d.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_command_flow.cpp">
+      <ObjectFileName>$(IntDir)room_command_flow_494a4258.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_network_flow.cpp">
+      <ObjectFileName>$(IntDir)room_network_flow_4f60630a.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\user_host_room_flow.cpp">
+      <ObjectFileName>$(IntDir)user_host_room_flow_dbf5dea3.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\native_match_duration.cpp">
+      <ObjectFileName>$(IntDir)native_match_duration_5d79e976.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_map_regions.cpp">
+      <ObjectFileName>$(IntDir)room_map_regions_10eb5447.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_coordinator.cpp">
+      <ObjectFileName>$(IntDir)room_coordinator_2d6526c4.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_runtime.cpp">
+      <ObjectFileName>$(IntDir)room_runtime_c56ef7f9.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\training_room_match.cpp">
+      <ObjectFileName>$(IntDir)training_room_match_9f25c223.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\hide_seek_match.cpp">
+      <ObjectFileName>$(IntDir)hide_seek_match_2781d292.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\hide_seek_scene_assets.cpp">
+      <ObjectFileName>$(IntDir)hide_seek_scene_assets_73c0271f.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\hide_seek_session.cpp">
+      <ObjectFileName>$(IntDir)hide_seek_session_66f469c3.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\hide_seek_room_flow.cpp">
+      <ObjectFileName>$(IntDir)hide_seek_room_flow_d815c3ee.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\dedicated_room.cpp">
+      <ObjectFileName>$(IntDir)dedicated_room_c9e96387.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\clan_ticket_broker.cpp">
+      <ObjectFileName>$(IntDir)clan_ticket_broker_b8f0f2c1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\equipment_relay_broker.cpp">
+      <ObjectFileName>$(IntDir)equipment_relay_broker_a5539f2c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\local_horde_tutor.cpp">
+      <ObjectFileName>$(IntDir)local_horde_tutor_87a8dd4c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\local_single_play.cpp">
+      <ObjectFileName>$(IntDir)local_single_play_0698b880.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\durable_match_settlement_flow.cpp">
+      <ObjectFileName>$(IntDir)durable_match_settlement_flow_398f5e40.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\gateway_login_flow.cpp">
+      <ObjectFileName>$(IntDir)gateway_login_flow_a2715674.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\gateway_session_state.cpp">
+      <ObjectFileName>$(IntDir)gateway_session_state_e041118d.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_settlement_dispatcher.cpp">
+      <ObjectFileName>$(IntDir)match_settlement_dispatcher_646ca1ab.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\plaza_coordinator.cpp">
+      <ObjectFileName>$(IntDir)plaza_coordinator_800b4050.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\plaza_directory.cpp">
+      <ObjectFileName>$(IntDir)plaza_directory_0d051723.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\service_runtime.cpp">
+      <ObjectFileName>$(IntDir)service_runtime_43d870c3.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\session_registry.cpp">
+      <ObjectFileName>$(IntDir)session_registry_72e07576.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\life_attendance_tracker.cpp">
+      <ObjectFileName>$(IntDir)life_attendance_tracker_1319b4bc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\session_transport_core.cpp">
+      <ObjectFileName>$(IntDir)session_transport_core_ab649086.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\social_command_flow.cpp">
+      <ObjectFileName>$(IntDir)social_command_flow_c350a23d.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\couple_flow.cpp">
+      <ObjectFileName>$(IntDir)couple_flow_b8f7a79e.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\social_spaces_flow.cpp">
+      <ObjectFileName>$(IntDir)social_spaces_flow_78b0f316.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\lobby\lobby_minigame.cpp">
+      <ObjectFileName>$(IntDir)lobby_minigame_a7c03646.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\world_coordinator.cpp">
+      <ObjectFileName>$(IntDir)world_coordinator_8370ec11.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\features\parties\world_party.cpp">
+      <ObjectFileName>$(IntDir)world_party_f1cb51cb.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\world_executor.cpp">
+      <ObjectFileName>$(IntDir)world_executor_07e8189d.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\addr.c">
+      <ObjectFileName>$(IntDir)addr_25874fc4.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\agent.c">
+      <ObjectFileName>$(IntDir)agent_0c856aba.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\crc32.c">
+      <ObjectFileName>$(IntDir)crc32_e52e86c3.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\const_time.c">
+      <ObjectFileName>$(IntDir)const_time_0e92d582.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\conn.c">
+      <ObjectFileName>$(IntDir)conn_b3c63475.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\conn_poll.c">
+      <ObjectFileName>$(IntDir)conn_poll_3395e66d.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\conn_thread.c">
+      <ObjectFileName>$(IntDir)conn_thread_c02d5af7.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\conn_mux.c">
+      <ObjectFileName>$(IntDir)conn_mux_91082b15.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\base64.c">
+      <ObjectFileName>$(IntDir)base64_0f835344.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\hash.c">
+      <ObjectFileName>$(IntDir)hash_f85c4f0f.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\hmac.c">
+      <ObjectFileName>$(IntDir)hmac_82cbced2.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\ice.c">
+      <ObjectFileName>$(IntDir)ice_6a9cd9eb.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\juice.c">
+      <ObjectFileName>$(IntDir)juice_9b796d0c.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\log.c">
+      <ObjectFileName>$(IntDir)log_0f3044ba.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\random.c">
+      <ObjectFileName>$(IntDir)random_6853530a.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\server.c">
+      <ObjectFileName>$(IntDir)server_66ea4b6f.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\stun.c">
+      <ObjectFileName>$(IntDir)stun_4c8aba69.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\timestamp.c">
+      <ObjectFileName>$(IntDir)timestamp_2a0d4dad.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\tcp.c">
+      <ObjectFileName>$(IntDir)tcp_807fdc73.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\turn.c">
+      <ObjectFileName>$(IntDir)turn_215b0caa.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\udp.c">
+      <ObjectFileName>$(IntDir)udp_3173fd76.obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RELEASE=1;USE_NETTLE=0;JUICE_EXPORTS;JUICE_STATIC;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_gateway.cpp">
+      <ObjectFileName>$(IntDir)room_gateway_12bce74b.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_gateway_commands.cpp">
+      <ObjectFileName>$(IntDir)room_gateway_commands_b20ef144.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_gateway_lifecycle.cpp">
+      <ObjectFileName>$(IntDir)room_gateway_lifecycle_58fb8d25.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_gateway_business.cpp">
+      <ObjectFileName>$(IntDir)room_gateway_business_6c6587a4.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_value_codec.cpp">
+      <ObjectFileName>$(IntDir)room_value_codec_f3ace233.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_tls_channel.cpp">
+      <ObjectFileName>$(IntDir)room_tls_channel_2322139f.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_rpc_client.cpp">
+      <ObjectFileName>$(IntDir)room_rpc_client_8d294618.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_ds_service.cpp">
+      <ObjectFileName>$(IntDir)room_ds_service_fb7c0503.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\world_process_guard.cpp">
+      <ObjectFileName>$(IntDir)world_process_guard_7541dd9f.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\admin_maintenance.cpp">
+      <ObjectFileName>$(IntDir)admin_maintenance_2cfaa024.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\character_creation_repository.cpp">
+      <ObjectFileName>$(IntDir)character_creation_repository_86412d33.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\clan_repository.cpp">
+      <ObjectFileName>$(IntDir)clan_repository_f7c0d944.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\key_map_store.cpp">
+      <ObjectFileName>$(IntDir)key_map_store_048dd6e7.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\level_icon_store.cpp">
+      <ObjectFileName>$(IntDir)level_icon_store_61a75b5c.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\connection_pool.cpp">
+      <ObjectFileName>$(IntDir)connection_pool_de9bbb27.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\equipment_repository.cpp">
+      <ObjectFileName>$(IntDir)equipment_repository_ff904929.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\item_use_repository.cpp">
+      <ObjectFileName>$(IntDir)item_use_repository_5b289f2a.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\life_item_repository.cpp">
+      <ObjectFileName>$(IntDir)life_item_repository_d7fb95d1.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\life_attendance_repository.cpp">
+      <ObjectFileName>$(IntDir)life_attendance_repository_8f10a254.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\inventory_discard_repository.cpp">
+      <ObjectFileName>$(IntDir)inventory_discard_repository_0aa78511.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\megaphone_repository.cpp">
+      <ObjectFileName>$(IntDir)megaphone_repository_1df43361.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\gift_repository.cpp">
+      <ObjectFileName>$(IntDir)gift_repository_a59cb6cf.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\launcher_authentication_repository.cpp">
+      <ObjectFileName>$(IntDir)launcher_authentication_repository_b777dc58.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\login_ticket_repository.cpp">
+      <ObjectFileName>$(IntDir)login_ticket_repository_c56709f1.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\match_preparation_repository.cpp">
+      <ObjectFileName>$(IntDir)match_preparation_repository_3877a5e4.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\tutorial_session_repository.cpp">
+      <ObjectFileName>$(IntDir)tutorial_session_repository_f2f28305.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\native_title_repository.cpp">
+      <ObjectFileName>$(IntDir)native_title_repository_5cdafcb9.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\single_play_session_repository.cpp">
+      <ObjectFileName>$(IntDir)single_play_session_repository_c55cc1f3.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\match_repository.cpp">
+      <ObjectFileName>$(IntDir)match_repository_6c620ffe.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\room_lease_repository.cpp">
+      <ObjectFileName>$(IntDir)room_lease_repository_82be4003.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\user_host_prize_repository.cpp">
+      <ObjectFileName>$(IntDir)user_host_prize_repository_37087302.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\migration_runner.cpp">
+      <ObjectFileName>$(IntDir)migration_runner_30fa299e.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\mystery_shop_repository.cpp">
+      <ObjectFileName>$(IntDir)mystery_shop_repository_13230fca.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\player_menu_repository.cpp">
+      <ObjectFileName>$(IntDir)player_menu_repository_d68ffc56.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\purchase_repository.cpp">
+      <ObjectFileName>$(IntDir)purchase_repository_f326da74.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\schema_verifier.cpp">
+      <ObjectFileName>$(IntDir)schema_verifier_13ca29d7.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\service_rules_repository.cpp">
+      <ObjectFileName>$(IntDir)service_rules_repository_ac270ef0.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\shop_catalog_repository.cpp">
+      <ObjectFileName>$(IntDir)shop_catalog_repository_690b99e8.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\chat_block_store.cpp">
+      <ObjectFileName>$(IntDir)chat_block_store_d4ecd5f1.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\lobby_minigame_store.cpp">
+      <ObjectFileName>$(IntDir)lobby_minigame_store_b003e5f6.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\social_repository.cpp">
+      <ObjectFileName>$(IntDir)social_repository_aad643ea.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\couple_repository.cpp">
+      <ObjectFileName>$(IntDir)couple_repository_729a1d2c.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\social_spaces_repository.cpp">
+      <ObjectFileName>$(IntDir)social_spaces_repository_a2617029.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\treasure_repository.cpp">
+      <ObjectFileName>$(IntDir)treasure_repository_5615eda5.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\workshop_repository.cpp">
+      <ObjectFileName>$(IntDir)workshop_repository_bec3175f.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\world_access_repository.cpp">
+      <ObjectFileName>$(IntDir)world_access_repository_ab1406e4.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\sql_connection.cpp">
+      <ObjectFileName>$(IntDir)sql_connection_9234b391.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\sql_mutation.cpp">
+      <ObjectFileName>$(IntDir)sql_mutation_12310406.obj</ObjectFileName>
+      <PreprocessorDefinitions>BF_EXTERNAL_DEPENDENCIES=1;_WIN32_WINNT=0x0A00;SPDLOG_COMPILED_LIB;SPDLOG_FMT_EXTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\process\ds_agent.cpp">
+      <ObjectFileName>$(IntDir)ds_agent_9da4b2cb.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;BOOST_ASIO_DISABLE_BOOST_DATE_TIME;BOOST_ASIO_DISABLE_BOOST_CONTEXT_FIBER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\process\child_process.cpp">
+      <ObjectFileName>$(IntDir)child_process_db45642a.obj</ObjectFileName>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="..\src\application\background_task_executor.h" />
+    <ClInclude Include="..\src\application\entry_points.h" />
+    <ClInclude Include="..\src\application\error.h" />
+    <ClInclude Include="..\src\application\event_logger.h" />
+    <ClInclude Include="..\src\application\generated\unicode16_category_c_ranges.inc" />
+    <ClInclude Include="..\src\application\identifier.h" />
+    <ClInclude Include="..\src\application\operation_id.h" />
+    <ClInclude Include="..\src\application\system_clock.h" />
+    <ClInclude Include="..\src\application\utf8.h" />
+    <ClInclude Include="..\src\crypto\openssl_credential_crypto.h" />
+    <ClInclude Include="..\src\crypto\openssl_match_id_source.h" />
+    <ClInclude Include="..\src\crypto\openssl_operation_id_source.h" />
+    <ClInclude Include="..\src\crypto\openssl_sha256.h" />
+    <ClInclude Include="..\src\crypto\openssl_treasure_random_source.h" />
+    <ClInclude Include="..\src\crypto\openssl_workshop_random_source.h" />
+    <ClInclude Include="..\src\crypto\windows_cng_credential_crypto.h" />
+    <ClInclude Include="..\src\crypto\windows_cng_match_id_source.h" />
+    <ClInclude Include="..\src\crypto\windows_cng_operation_id_source.h" />
+    <ClInclude Include="..\src\crypto\windows_cng_sha256.h" />
+    <ClInclude Include="..\src\features\authentication\account_credentials.h" />
+    <ClInclude Include="..\src\features\authentication\authentication.h" />
+    <ClInclude Include="..\src\features\authentication\credential_crypto.h" />
+    <ClInclude Include="..\src\features\authentication\launcher_authentication.h" />
+    <ClInclude Include="..\src\features\authentication\world_access.h" />
+    <ClInclude Include="..\src\features\battle\bomb_maps.h" />
+    <ClInclude Include="..\src\features\battle\captain_assignments.h" />
+    <ClInclude Include="..\src\features\battle\combat_relay.h" />
+    <ClInclude Include="..\src\features\battle\crazy_racing_match.h" />
+    <ClInclude Include="..\src\features\battle\durable_match_settlement_flow.h" />
+    <ClInclude Include="..\src\features\battle\event_mole_objects.h" />
+    <ClInclude Include="..\src\features\battle\event_mole_profile.h" />
+    <ClInclude Include="..\src\features\battle\extreme_racing_maps.h" />
+    <ClInclude Include="..\src\features\battle\extreme_racing_match.h" />
+    <ClInclude Include="..\src\features\battle\extreme_racing_scene.h" />
+    <ClInclude Include="..\src\features\battle\generated\bomb_maps.inc" />
+    <ClInclude Include="..\src\features\battle\generated\crazy_racing_maps.inc" />
+    <ClInclude Include="..\src\features\battle\generated\event_mole_profile_data.inc" />
+    <ClInclude Include="..\src\features\battle\generated\extreme_racing_maps.inc" />
+    <ClInclude Include="..\src\features\battle\generated\extreme_racing_objects.inc" />
+    <ClInclude Include="..\src\features\battle\generated\extreme_racing_scene.inc" />
+    <ClInclude Include="..\src\features\battle\generated\horde_guardian_maps.inc" />
+    <ClInclude Include="..\src\features\battle\generated\native_bomb_supplies.inc" />
+    <ClInclude Include="..\src\features\battle\generated\native_infection_supplies.inc" />
+    <ClInclude Include="..\src\features\battle\generated\native_map_durations.inc" />
+    <ClInclude Include="..\src\features\battle\generated\native_map_spawns.inc" />
+    <ClInclude Include="..\src\features\battle\generated\native_sniper_supplies.inc" />
+    <ClInclude Include="..\src\features\battle\generated\native_team_spawn_maps.inc" />
+    <ClInclude Include="..\src\features\battle\generated\native_team_spawn_mode_maps.inc" />
+    <ClInclude Include="..\src\features\battle\generated\zombie_pve_loadouts.inc" />
+    <ClInclude Include="..\src\features\battle\generated\zombie_pve_rescues.inc" />
+    <ClInclude Include="..\src\features\battle\generated\zombie_pve_spawns.inc" />
+    <ClInclude Include="..\src\features\battle\hide_seek_geometry.h" />
+    <ClInclude Include="..\src\features\battle\hide_seek_match.h" />
+    <ClInclude Include="..\src\features\battle\ice_service.h" />
+    <ClInclude Include="..\src\features\battle\infection_match.h" />
+    <ClInclude Include="..\src\features\battle\match_id.h" />
+    <ClInclude Include="..\src\features\battle\match_lifecycle_repair.h" />
+    <ClInclude Include="..\src\features\battle\match_objectives.h" />
+    <ClInclude Include="..\src\features\battle\match_preparation.h" />
+    <ClInclude Include="..\src\features\battle\match_result.h" />
+    <ClInclude Include="..\src\features\battle\match_reward.h" />
+    <ClInclude Include="..\src\features\battle\match_settlement.h" />
+    <ClInclude Include="..\src\features\battle\match_settlement_dispatcher.h" />
+    <ClInclude Include="..\src\features\battle\match_start.h" />
+    <ClInclude Include="..\src\features\battle\match_terminal.h" />
+    <ClInclude Include="..\src\features\battle\mode_weapon.h" />
+    <ClInclude Include="..\src\features\battle\native_item_rules.h" />
+    <ClInclude Include="..\src\features\battle\native_match_duration.h" />
+    <ClInclude Include="..\src\features\battle\native_projectile_counts.h" />
+    <ClInclude Include="..\src\features\battle\native_survival_tables.h" />
+    <ClInclude Include="..\src\features\battle\native_team_spawn.h" />
+    <ClInclude Include="..\src\features\battle\pirate_map_agents.h" />
+    <ClInclude Include="..\src\features\battle\pirate_maps.h" />
+    <ClInclude Include="..\src\features\battle\pirate_match.h" />
+    <ClInclude Include="..\src\features\battle\sniper_weapon.h" />
+    <ClInclude Include="..\src\features\battle\survival_loot.h" />
+    <ClInclude Include="..\src\features\battle\weapon_master_match.h" />
+    <ClInclude Include="..\src\features\battle\zombie_pve_maps.h" />
+    <ClInclude Include="..\src\features\battle\zombie_pve_match.h" />
+    <ClInclude Include="..\src\features\characters\character.h" />
+    <ClInclude Include="..\src\features\characters\character_creation.h" />
+    <ClInclude Include="..\src\features\characters\generated\hotblood_stats_data.inc" />
+    <ClInclude Include="..\src\features\characters\generated\name_policy_words.inc" />
+    <ClInclude Include="..\src\features\characters\hotblood_stats.h" />
+    <ClInclude Include="..\src\features\characters\level_icon.h" />
+    <ClInclude Include="..\src\features\characters\name_policy.h" />
+    <ClInclude Include="..\src\features\characters\native_title.h" />
+    <ClInclude Include="..\src\features\characters\native_title_profile.h" />
+    <ClInclude Include="..\src\features\characters\nickname.h" />
+    <ClInclude Include="..\src\features\chat\chat_blocks.h" />
+    <ClInclude Include="..\src\features\chat\generated\message_policy_words.inc" />
+    <ClInclude Include="..\src\features\chat\megaphone.h" />
+    <ClInclude Include="..\src\features\chat\megaphone_event.h" />
+    <ClInclude Include="..\src\features\chat\message_policy.h" />
+    <ClInclude Include="..\src\features\chat\user_message.h" />
+    <ClInclude Include="..\src\features\clans\clan_service.h" />
+    <ClInclude Include="..\src\features\configuration\mysql_settings.h" />
+    <ClInclude Include="..\src\features\configuration\server_config.h" />
+    <ClInclude Include="..\src\features\configuration\service_rules.h" />
+    <ClInclude Include="..\src\features\gifts\gift_store.h" />
+    <ClInclude Include="..\src\features\inventory\clothing_attributes.h" />
+    <ClInclude Include="..\src\features\inventory\clothing_set.h" />
+    <ClInclude Include="..\src\features\inventory\equipment_service.h" />
+    <ClInclude Include="..\src\features\inventory\generated\clothing_attributes_data.inc" />
+    <ClInclude Include="..\src\features\inventory\generated\clothing_sets_data.inc" />
+    <ClInclude Include="..\src\features\inventory\inventory_discard.h" />
+    <ClInclude Include="..\src\features\inventory\item_attribute.h" />
+    <ClInclude Include="..\src\features\inventory\item_use_service.h" />
+    <ClInclude Include="..\src\features\inventory\key_map.h" />
+    <ClInclude Include="..\src\features\inventory\life_attendance.h" />
+    <ClInclude Include="..\src\features\inventory\life_attendance_journal.h" />
+    <ClInclude Include="..\src\features\inventory\life_attendance_tracker.h" />
+    <ClInclude Include="..\src\features\inventory\life_item.h" />
+    <ClInclude Include="..\src\features\lobby\lobby_minigame.h" />
+    <ClInclude Include="..\src\features\lobby\player_menu_snapshot.h" />
+    <ClInclude Include="..\src\features\practice\generated\single_play_missions.inc" />
+    <ClInclude Include="..\src\features\practice\horde_tutor_match.h" />
+    <ClInclude Include="..\src\features\practice\horde_tutor_profile.h" />
+    <ClInclude Include="..\src\features\practice\local_horde_tutor.h" />
+    <ClInclude Include="..\src\features\practice\local_single_play.h" />
+    <ClInclude Include="..\src\features\practice\training_dummy_data.h" />
+    <ClInclude Include="..\src\features\practice\training_room.h" />
+    <ClInclude Include="..\src\features\practice\training_room_match.h" />
+    <ClInclude Include="..\src\features\practice\tutorial_session.h" />
+    <ClInclude Include="..\src\features\rooms\client\hide_seek_assets.h" />
+    <ClInclude Include="..\src\features\rooms\client\hide_seek_state.h" />
+    <ClInclude Include="..\src\features\rooms\dedicated_room.h" />
+    <ClInclude Include="..\src\features\rooms\generated\room_item_catalog.inc" />
+    <ClInclude Include="..\src\features\rooms\room_command_flow.h" />
+    <ClInclude Include="..\src\features\rooms\room_coordinator.h" />
+    <ClInclude Include="..\src\features\rooms\room_item_policy.h" />
+    <ClInclude Include="..\src\features\rooms\room_lease.h" />
+    <ClInclude Include="..\src\features\rooms\room_ownership.h" />
+    <ClInclude Include="..\src\features\rooms\room_runtime.h" />
+    <ClInclude Include="..\src\features\scenes\generated\map_regions.inc" />
+    <ClInclude Include="..\src\features\scenes\hide_seek_scene_assets.h" />
+    <ClInclude Include="..\src\features\scenes\native_wb_scene.h" />
+    <ClInclude Include="..\src\features\scenes\native_x_scene.h" />
+    <ClInclude Include="..\src\features\scenes\native_x_stream.h" />
+    <ClInclude Include="..\src\features\scenes\plaza_coordinator.h" />
+    <ClInclude Include="..\src\features\scenes\plaza_directory.h" />
+    <ClInclude Include="..\src\features\shop\mystery_shop_service.h" />
+    <ClInclude Include="..\src\features\shop\purchase.h" />
+    <ClInclude Include="..\src\features\shop\purchase_service.h" />
+    <ClInclude Include="..\src\features\shop\shop_catalog.h" />
+    <ClInclude Include="..\src\features\shop\treasure_service.h" />
+    <ClInclude Include="..\src\features\shop\workshop_service.h" />
+    <ClInclude Include="..\src\features\social\couple_service.h" />
+    <ClInclude Include="..\src\features\social\social_query.h" />
+    <ClInclude Include="..\src\features\social\social_service.h" />
+    <ClInclude Include="..\src\features\social\social_spaces.h" />
+    <ClInclude Include="..\src\features\social\social_target.h" />
+    <ClInclude Include="..\src\network\clan_tcp_server.h" />
+    <ClInclude Include="..\src\network\equipment_relay_handler.h" />
+    <ClInclude Include="..\src\network\gateway_opcode_routes.h" />
+    <ClInclude Include="..\src\network\gateway_session_handler.h" />
+    <ClInclude Include="..\src\network\gift_handler.h" />
+    <ClInclude Include="..\src\network\ice_network_service.h" />
+    <ClInclude Include="..\src\network\launcher_authentication_handler.h" />
+    <ClInclude Include="..\src\network\operational_http_server.h" />
+    <ClInclude Include="..\src\network\room_ds_service.h" />
+    <ClInclude Include="..\src\network\room_gateway.h" />
+    <ClInclude Include="..\src\network\room_gateway_state.h" />
+    <ClInclude Include="..\src\network\room_rpc_client.h" />
+    <ClInclude Include="..\src\network\room_tls_channel.h" />
+    <ClInclude Include="..\src\network\room_value_codec.h" />
+    <ClInclude Include="..\src\network\tcp_server.h" />
+    <ClInclude Include="..\src\operations\admin\moderation.h" />
+    <ClInclude Include="..\src\operations\async_file_logger.h" />
+    <ClInclude Include="..\src\operations\database_task_pool.h" />
+    <ClInclude Include="..\src\operations\process\child_process.h" />
+    <ClInclude Include="..\src\operations\process\ds_agent.h" />
+    <ClInclude Include="..\src\operations\system_utc_clock.h" />
+    <ClInclude Include="..\src\operations\utf8_path.h" />
+    <ClInclude Include="..\src\persistence\file_life_attendance_journal.h" />
+    <ClInclude Include="..\src\persistence\mysql\admin_maintenance.h" />
+    <ClInclude Include="..\src\persistence\mysql\character_creation_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\chat_block_store.h" />
+    <ClInclude Include="..\src\persistence\mysql\clan_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\connection_pool.h" />
+    <ClInclude Include="..\src\persistence\mysql\couple_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\equipment_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\generated\table_keys.inc" />
+    <ClInclude Include="..\src\persistence\mysql\gift_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\item_attributes.h" />
+    <ClInclude Include="..\src\persistence\mysql\item_use_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\key_map_store.h" />
+    <ClInclude Include="..\src\persistence\mysql\launcher_authentication_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\level_icon_store.h" />
+    <ClInclude Include="..\src\persistence\mysql\life_attendance_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\lobby_minigame_store.h" />
+    <ClInclude Include="..\src\persistence\mysql\login_ticket_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\match_preparation_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\match_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\migration_runner.h" />
+    <ClInclude Include="..\src\persistence\mysql\mystery_shop_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\native_title_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\player_menu_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\purchase_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\room_lease_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\schema_verifier.h" />
+    <ClInclude Include="..\src\persistence\mysql\service_rules_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\shop_catalog_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\social_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\social_spaces_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\sql_connection.h" />
+    <ClInclude Include="..\src\persistence\mysql\treasure_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\tutorial_session_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\user_host_prize_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\workshop_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\world_access_repository.h" />
+    <ClInclude Include="..\src\persistence\mysql\world_process_guard.h" />
+    <ClInclude Include="..\src\protocol\battle\combat_messages.h" />
+    <ClInclude Include="..\src\protocol\battle\extreme_racing_messages.h" />
+    <ClInclude Include="..\src\protocol\battle\hide_seek_assets.h" />
+    <ClInclude Include="..\src\protocol\battle\hide_seek_wire.h" />
+    <ClInclude Include="..\src\protocol\battle\match_transition_messages.h" />
+    <ClInclude Include="..\src\protocol\battle\native_progression_messages.h" />
+    <ClInclude Include="..\src\protocol\battle\npc_messages.h" />
+    <ClInclude Include="..\src\protocol\battle\smart_ping_messages.h" />
+    <ClInclude Include="..\src\protocol\battle\special_mode_messages.h" />
+    <ClInclude Include="..\src\protocol\battle\weapon_master_messages.h" />
+    <ClInclude Include="..\src\protocol\characters\fighter_ranking_messages.h" />
+    <ClInclude Include="..\src\protocol\chat\chat_block_messages.h" />
+    <ClInclude Include="..\src\protocol\chat\chat_messages.h" />
+    <ClInclude Include="..\src\protocol\clans\clan_messages.h" />
+    <ClInclude Include="..\src\protocol\codec\frame_codec.h" />
+    <ClInclude Include="..\src\protocol\codec\limits.h" />
+    <ClInclude Include="..\src\protocol\codec\packet_io.h" />
+    <ClInclude Include="..\src\protocol\codec\text_codec.h" />
+    <ClInclude Include="..\src\protocol\internal\room_envelope.h" />
+    <ClInclude Include="..\src\protocol\inventory\inventory_messages.h" />
+    <ClInclude Include="..\src\protocol\inventory\key_map_messages.h" />
+    <ClInclude Include="..\src\protocol\lobby\lobby_minigame_messages.h" />
+    <ClInclude Include="..\src\protocol\lobby\menu_messages.h" />
+    <ClInclude Include="..\src\protocol\login\gateway_messages.h" />
+    <ClInclude Include="..\src\protocol\rooms\equipment_relay_messages.h" />
+    <ClInclude Include="..\src\protocol\rooms\room_item_messages.h" />
+    <ClInclude Include="..\src\protocol\rooms\room_messages.h" />
+    <ClInclude Include="..\src\protocol\rooms\room_network_messages.h" />
+    <ClInclude Include="..\src\protocol\rooms\user_host_messages.h" />
+    <ClInclude Include="..\src\protocol\scenes\plaza_messages.h" />
+    <ClInclude Include="..\src\protocol\scenes\scene_messages.h" />
+    <ClInclude Include="..\src\protocol\scenes\scene_session_messages.h" />
+    <ClInclude Include="..\src\protocol\shop\mystery_shop_messages.h" />
+    <ClInclude Include="..\src\protocol\shop\shop_catalog_messages.h" />
+    <ClInclude Include="..\src\protocol\shop\treasure_messages.h" />
+    <ClInclude Include="..\src\protocol\shop\workshop_messages.h" />
+    <ClInclude Include="..\src\protocol\social\couple_messages.h" />
+    <ClInclude Include="..\src\protocol\social\social_messages.h" />
+    <ClInclude Include="..\src\sessions\clan_ticket_broker.h" />
+    <ClInclude Include="..\src\sessions\couple_flow.h" />
+    <ClInclude Include="..\src\sessions\equipment_relay_broker.h" />
+    <ClInclude Include="..\src\sessions\gateway_login_flow.h" />
+    <ClInclude Include="..\src\sessions\gateway_session_state.h" />
+    <ClInclude Include="..\src\sessions\hide_seek_session.h" />
+    <ClInclude Include="..\src\sessions\latency_histogram.h" />
+    <ClInclude Include="..\src\sessions\outbound_message.h" />
+    <ClInclude Include="..\src\sessions\service_runtime.h" />
+    <ClInclude Include="..\src\sessions\session_registry.h" />
+    <ClInclude Include="..\src\sessions\session_transport_core.h" />
+    <ClInclude Include="..\src\sessions\social_command_flow.h" />
+    <ClInclude Include="..\src\sessions\social_spaces_flow.h" />
+    <ClInclude Include="..\src\sessions\world_coordinator.h" />
+    <ClInclude Include="..\src\sessions\world_executor.h" />
+    <ClInclude Include="..\third_party\libjuice\include\juice\juice.h" />
+    <ClInclude Include="..\third_party\libjuice\src\addr.h" />
+    <ClInclude Include="..\third_party\libjuice\src\agent.h" />
+    <ClInclude Include="..\third_party\libjuice\src\base64.h" />
+    <ClInclude Include="..\third_party\libjuice\src\conn.h" />
+    <ClInclude Include="..\third_party\libjuice\src\conn_mux.h" />
+    <ClInclude Include="..\third_party\libjuice\src\conn_poll.h" />
+    <ClInclude Include="..\third_party\libjuice\src\conn_thread.h" />
+    <ClInclude Include="..\third_party\libjuice\src\const_time.h" />
+    <ClInclude Include="..\third_party\libjuice\src\crc32.h" />
+    <ClInclude Include="..\third_party\libjuice\src\hash.h" />
+    <ClInclude Include="..\third_party\libjuice\src\hmac.h" />
+    <ClInclude Include="..\third_party\libjuice\src\ice.h" />
+    <ClInclude Include="..\third_party\libjuice\src\log.h" />
+    <ClInclude Include="..\third_party\libjuice\src\picohash.h" />
+    <ClInclude Include="..\third_party\libjuice\src\random.h" />
+    <ClInclude Include="..\third_party\libjuice\src\server.h" />
+    <ClInclude Include="..\third_party\libjuice\src\socket.h" />
+    <ClInclude Include="..\third_party\libjuice\src\stun.h" />
+    <ClInclude Include="..\third_party\libjuice\src\tcp.h" />
+    <ClInclude Include="..\third_party\libjuice\src\thread.h" />
+    <ClInclude Include="..\third_party\libjuice\src\timestamp.h" />
+    <ClInclude Include="..\third_party\libjuice\src\turn.h" />
+    <ClInclude Include="..\third_party\libjuice\src\udp.h" />
+    <None Include="..\src\persistence\migrations\0001_schema.sql" />
+    <None Include="..\src\persistence\migrations\0001_schema_contract.json" />
+    <None Include="..\src\persistence\migrations\0001_seed.sql" />
+    <None Include="..\src\persistence\migrations\0002_remove_retired_services.sql" />
+    <None Include="..\src\persistence\migrations\0002_remove_retired_services_contract.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  
+</Project>

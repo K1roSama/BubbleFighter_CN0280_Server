@@ -1,0 +1,23 @@
+{
+  "certificate": "certificates/node.pem",
+  "private_key": "certificates/node.key",
+  "authority": "certificates/room_ca.pem",
+  "gateway_peer_name": "game-gateway.internal",
+  "bind_address": "0.0.0.0",
+  "advertise_address": "10.0.0.21",
+  "port": 7443,
+  "room_executable": "../../BubbleFighter.Server.exe",
+  "max_rooms": 16,
+  "prewarm": 2,
+  "room_memory_limit_mb": 128,
+  "memory_budget_mb": 4096,
+  "handle_budget": 65536,
+  "drain_marker": "node.drain",
+  "bind_timeout_ms": 30000,
+  "loading_timeout_ms": 90000,
+  "countdown_ms": 4000,
+  "use_room_duration": true,
+  "match_duration_ms": 240000,
+  "result_transition_ms": 2000,
+  "result_duration_ms": 20000
+}

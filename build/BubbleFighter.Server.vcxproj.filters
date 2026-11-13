@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{086D44AB-C65E-550D-887B-B7DC83EBEF5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\application">
+      <UniqueIdentifier>{8F08390D-F5A4-522F-A901-E524F1A34A0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\application\generated">
+      <UniqueIdentifier>{A2286C9A-105B-51E0-B56E-EAA30DD7343A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypto">
+      <UniqueIdentifier>{0DC9DFC4-E10F-5F0B-B536-7B23F81527E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features">
+      <UniqueIdentifier>{41EF1CF0-3BF1-5FA1-BF43-808CEE467BC3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\authentication">
+      <UniqueIdentifier>{2EBA46FC-3754-5067-B38D-0752C5992A47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\battle">
+      <UniqueIdentifier>{C827C649-EC89-57BE-918C-CAD679FB7D7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\battle\generated">
+      <UniqueIdentifier>{600C1B10-77D7-515D-9FE2-1DCA4BCB7607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\characters">
+      <UniqueIdentifier>{7707DCC0-DF37-5650-85F4-FB19027A946A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\characters\generated">
+      <UniqueIdentifier>{BB90DE08-0587-556C-8E7A-9E577BECD0E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\chat">
+      <UniqueIdentifier>{28503602-DE37-5A71-83FD-AEC12D9A2AA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\chat\generated">
+      <UniqueIdentifier>{11969C49-2B41-5720-9114-E0260902614F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\clans">
+      <UniqueIdentifier>{47470D55-2C22-52F9-B385-9E16C5305F0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\configuration">
+      <UniqueIdentifier>{02B1CF5D-F70C-505E-A316-443115EA07A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\gifts">
+      <UniqueIdentifier>{B378377F-5500-54C9-820E-7F74EBAD6E7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\inventory">
+      <UniqueIdentifier>{CB681BEC-87F2-5FD5-A4B5-86BEE0F7A3D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\inventory\generated">
+      <UniqueIdentifier>{982B6C3B-D395-5FB9-8A9B-CFAC716056A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\lobby">
+      <UniqueIdentifier>{CD91B0ED-E2CD-5D97-8FCD-BCE644ADB104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\parties">
+      <UniqueIdentifier>{CC8DC893-10A4-5EB1-90C7-32D62CCDC65E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\practice">
+      <UniqueIdentifier>{B7AB7BD9-C691-577B-9239-582032AD292D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\practice\generated">
+      <UniqueIdentifier>{C0D2526A-1E2A-51CC-BED5-F007B161E964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\rooms">
+      <UniqueIdentifier>{FAABBA81-A8C0-5464-82CB-AA04699C6FF0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\rooms\client">
+      <UniqueIdentifier>{68381715-B265-5284-BE52-4B064C78F4F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\rooms\generated">
+      <UniqueIdentifier>{21B545BD-7FEE-5176-8D3B-634C7A8DE8DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\scenes">
+      <UniqueIdentifier>{C250E958-7668-5C7B-A7F2-0082E9094144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\scenes\generated">
+      <UniqueIdentifier>{91574F85-33D0-5298-9D17-D024E9111A22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\shop">
+      <UniqueIdentifier>{2FE413E2-E546-5D5B-B643-EE8D395DEEAB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\social">
+      <UniqueIdentifier>{4ADF6156-76E8-5E1E-AF60-EC2A5353FADF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\network">
+      <UniqueIdentifier>{557476F5-9B83-5D38-9D6B-CDB772BD4B7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\operations">
+      <UniqueIdentifier>{1FB3C81E-0477-5062-B8AB-4249D0F75869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\operations\admin">
+      <UniqueIdentifier>{E8F29178-2B3C-5DCC-8E5E-DE298D282A83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\operations\process">
+      <UniqueIdentifier>{04434F8B-6914-53B7-A2C8-319E46337662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\persistence">
+      <UniqueIdentifier>{ECD026E6-5BEC-5440-9217-ECBACB9B3E8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\persistence\migrations">
+      <UniqueIdentifier>{AC84A373-931A-5FE9-B003-A7848D2CCC75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\persistence\mysql">
+      <UniqueIdentifier>{D91D6D0A-ABBA-5470-A00E-172D3567ABFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\persistence\mysql\generated">
+      <UniqueIdentifier>{5BD4C19D-699A-507D-8CFF-CD416251279F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol">
+      <UniqueIdentifier>{AD571E8A-B8E5-5A6B-A071-6611A45C8C42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\battle">
+      <UniqueIdentifier>{6FBC919B-A3FB-5FB9-AE23-F0314064A942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\characters">
+      <UniqueIdentifier>{D2C01BA3-5362-5AEF-B85F-0BDF972092ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\chat">
+      <UniqueIdentifier>{82AB2B7F-FBD8-5505-B2B3-7DB5126DC0DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\clans">
+      <UniqueIdentifier>{63B7ED64-9110-5913-8115-0E5A622A4F8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\codec">
+      <UniqueIdentifier>{D3166168-8412-52C9-8248-BD12DF286375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\internal">
+      <UniqueIdentifier>{CD13D6BD-3DA2-566D-AEBA-8731D83B5521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\inventory">
+      <UniqueIdentifier>{D59891DC-F86B-5EA9-B866-619FA6CBD182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\lobby">
+      <UniqueIdentifier>{25CBD921-4E04-53BD-A449-E87FD7A7540D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\login">
+      <UniqueIdentifier>{56D5CA37-C0C4-5E42-ABD9-B645F54658D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\rooms">
+      <UniqueIdentifier>{9BD69465-548B-5572-A5D6-EB70BE49BEAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\scenes">
+      <UniqueIdentifier>{FB6D4F8A-F3D2-569E-ABAA-6DCE86581994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\shop">
+      <UniqueIdentifier>{46BDB03A-0607-5696-B7B0-ED4E3819DFBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocol\social">
+      <UniqueIdentifier>{8950B564-F5A9-5C0B-8734-8C8A280A8673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sessions">
+      <UniqueIdentifier>{1A3B91CE-AC0B-573F-8D61-118CB0F878A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{8EC2FD9E-7BF6-5EDB-A4B8-3BBBFF845B7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\libjuice">
+      <UniqueIdentifier>{458D07BD-CFB8-5DF9-8F2D-E44B93BAEB7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\libjuice\include">
+      <UniqueIdentifier>{D78F4DC2-CDBD-5189-8687-16229B377777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\libjuice\include\juice">
+      <UniqueIdentifier>{60A1B7D2-3DE1-5995-90F9-954037A8EF82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\libjuice\src">
+      <UniqueIdentifier>{FC3A9C7E-2BB1-5199-824C-81126AFF7188}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\game_main.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\admin_main.cpp">
+      <Filter>src\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\admin\moderation.cpp">
+      <Filter>src\operations\admin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\migrate_main.cpp">
+      <Filter>src\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\ds_agent_main.cpp">
+      <Filter>src\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\login_main.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\room_ds_main.cpp">
+      <Filter>src\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\configuration\server_config.cpp">
+      <Filter>src\features\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\async_file_logger.cpp">
+      <Filter>src\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\file_life_attendance_journal.cpp">
+      <Filter>src\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_credential_crypto.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_match_id_source.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_operation_id_source.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_sha256.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_treasure_random_source.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\openssl_workshop_random_source.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\windows_cng_credential_crypto.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\windows_cng_match_id_source.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\windows_cng_operation_id_source.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\windows_cng_sha256.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\database_task_pool.cpp">
+      <Filter>src\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\authentication.cpp">
+      <Filter>src\features\authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\character_creation.cpp">
+      <Filter>src\features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\clans\clan_service.cpp">
+      <Filter>src\features\clans</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\key_map.cpp">
+      <Filter>src\features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\equipment_service.cpp">
+      <Filter>src\features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\item_use_service.cpp">
+      <Filter>src\features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\inventory_discard.cpp">
+      <Filter>src\features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\native_title_profile.cpp">
+      <Filter>src\features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\error.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\event_logger.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\launcher_authentication.cpp">
+      <Filter>src\features\authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_lifecycle_repair.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_preparation.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_start.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_settlement.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_terminal.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\mystery_shop_service.cpp">
+      <Filter>src\features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\lobby\player_menu_snapshot.cpp">
+      <Filter>src\features\lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\purchase_service.cpp">
+      <Filter>src\features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\configuration\service_rules.cpp">
+      <Filter>src\features\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\shop_catalog.cpp">
+      <Filter>src\features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\social\social_query.cpp">
+      <Filter>src\features\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\social\social_service.cpp">
+      <Filter>src\features\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\treasure_service.cpp">
+      <Filter>src\features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\workshop_service.cpp">
+      <Filter>src\features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\world_access.cpp">
+      <Filter>src\features\authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\account_credentials.cpp">
+      <Filter>src\features\authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\character.cpp">
+      <Filter>src\features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\clothing_set.cpp">
+      <Filter>src\features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\clothing_attributes.cpp">
+      <Filter>src\features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\hotblood_stats.cpp">
+      <Filter>src\features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\identifier.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_id.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_result.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_reward.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\nickname.cpp">
+      <Filter>src\features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\name_policy.cpp">
+      <Filter>src\features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\chat\message_policy.cpp">
+      <Filter>src\features\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\operation_id.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\purchase.cpp">
+      <Filter>src\features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\chat\user_message.cpp">
+      <Filter>src\features\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\utf8.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\internal\room_envelope.cpp">
+      <Filter>src\protocol\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\chat\chat_block_messages.cpp">
+      <Filter>src\protocol\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\lobby\lobby_minigame_messages.cpp">
+      <Filter>src\protocol\lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\chat\chat_messages.cpp">
+      <Filter>src\protocol\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\clans\clan_messages.cpp">
+      <Filter>src\protocol\clans</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\equipment_relay_messages.cpp">
+      <Filter>src\protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\key_map_messages.cpp">
+      <Filter>src\protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\combat_messages.cpp">
+      <Filter>src\protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\extreme_racing_messages.cpp">
+      <Filter>src\protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\special_mode_messages.cpp">
+      <Filter>src\protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\frame_codec.cpp">
+      <Filter>src\protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\fighter_ranking_messages.cpp">
+      <Filter>src\protocol\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\gateway_messages.cpp">
+      <Filter>src\protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\inventory_messages.cpp">
+      <Filter>src\protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\limits.cpp">
+      <Filter>src\protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\match_transition_messages.cpp">
+      <Filter>src\protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\weapon_master_messages.cpp">
+      <Filter>src\protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\lobby\menu_messages.cpp">
+      <Filter>src\protocol\lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\native_progression_messages.cpp">
+      <Filter>src\protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\npc_messages.cpp">
+      <Filter>src\protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\mystery_shop_messages.cpp">
+      <Filter>src\protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\packet_io.cpp">
+      <Filter>src\protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\plaza_messages.cpp">
+      <Filter>src\protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\room_messages.cpp">
+      <Filter>src\protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\scene_messages.cpp">
+      <Filter>src\protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\scene_session_messages.cpp">
+      <Filter>src\protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\shop_catalog_messages.cpp">
+      <Filter>src\protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\social\social_messages.cpp">
+      <Filter>src\protocol\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\social\couple_messages.cpp">
+      <Filter>src\protocol\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\smart_ping_messages.cpp">
+      <Filter>src\protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\text_codec.cpp">
+      <Filter>src\protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\treasure_messages.cpp">
+      <Filter>src\protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\user_host_messages.cpp">
+      <Filter>src\protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\workshop_messages.cpp">
+      <Filter>src\protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\launcher_authentication_handler.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\clan_tcp_server.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\gateway_opcode_routes.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\gateway_session_handler.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\gift_handler.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\operational_http_server.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\tcp_server.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\equipment_relay_handler.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\ice_network_service.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_relay.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_relay_smart_ping.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_storm.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_survival.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_survival_trap.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_survival_melee.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_loot.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_tide.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_survival_water.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_loot_objectives.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_backpack.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\survival_backpack_objectives.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_item_effects.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_turret.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_deathmatch_fever.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_objectives.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\event_mole_profile.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\event_mole_objects.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\bomb_maps.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\native_team_spawn.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\native_wb_scene.cpp">
+      <Filter>src\features\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\native_x_stream.cpp">
+      <Filter>src\features\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\native_x_scene.cpp">
+      <Filter>src\features\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\soccer_objectives.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\loot_objectives.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\pirate_coin_objectives.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\weapon_drop_objectives.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\pirate_match.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\horde_tutor_match.cpp">
+      <Filter>src\features\practice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\horde_tutor_profile.cpp">
+      <Filter>src\features\practice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\infection_match.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\infection_combat.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\infection_fever.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\weapon_master_match.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\extreme_racing_maps.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\extreme_racing_scene.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\extreme_racing_match.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\crazy_racing_match.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\captain_assignments.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\captain_defeat.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\captain_fever.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\zombie_pve_match.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\zombie_pve_score.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\pirate_map_agents.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\horde_guardians.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\pirate_maps.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\zombie_pve_maps.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_command_flow.cpp">
+      <Filter>src\features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_network_flow.cpp">
+      <Filter>src\features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\user_host_room_flow.cpp">
+      <Filter>src\features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\native_match_duration.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_map_regions.cpp">
+      <Filter>src\features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_coordinator.cpp">
+      <Filter>src\features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_runtime.cpp">
+      <Filter>src\features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\training_room_match.cpp">
+      <Filter>src\features\practice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\hide_seek_match.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\hide_seek_scene_assets.cpp">
+      <Filter>src\features\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\hide_seek_session.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\hide_seek_room_flow.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\dedicated_room.cpp">
+      <Filter>src\features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\clan_ticket_broker.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\equipment_relay_broker.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\local_horde_tutor.cpp">
+      <Filter>src\features\practice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\local_single_play.cpp">
+      <Filter>src\features\practice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\durable_match_settlement_flow.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\gateway_login_flow.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\gateway_session_state.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\match_settlement_dispatcher.cpp">
+      <Filter>src\features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\plaza_coordinator.cpp">
+      <Filter>src\features\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\plaza_directory.cpp">
+      <Filter>src\features\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\service_runtime.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\session_registry.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\life_attendance_tracker.cpp">
+      <Filter>src\features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\session_transport_core.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\social_command_flow.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\couple_flow.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\social_spaces_flow.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\lobby\lobby_minigame.cpp">
+      <Filter>src\features\lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\world_coordinator.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\parties\world_party.cpp">
+      <Filter>src\features\parties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\world_executor.cpp">
+      <Filter>src\sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\addr.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\agent.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\crc32.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\const_time.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\conn.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\conn_poll.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\conn_thread.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\conn_mux.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\base64.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\hash.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\hmac.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\ice.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\juice.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\log.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\random.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\server.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\stun.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\timestamp.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\tcp.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\turn.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libjuice\src\udp.c">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_gateway.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_gateway_commands.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_gateway_lifecycle.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_gateway_business.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_value_codec.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_tls_channel.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_rpc_client.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\room_ds_service.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\world_process_guard.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\admin_maintenance.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\character_creation_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\clan_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\key_map_store.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\level_icon_store.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\connection_pool.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\equipment_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\item_use_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\life_item_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\life_attendance_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\inventory_discard_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\megaphone_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\gift_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\launcher_authentication_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\login_ticket_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\match_preparation_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\tutorial_session_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\native_title_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\single_play_session_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\match_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\room_lease_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\user_host_prize_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\migration_runner.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\mystery_shop_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\player_menu_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\purchase_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\schema_verifier.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\service_rules_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\shop_catalog_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\chat_block_store.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\lobby_minigame_store.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\social_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\couple_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\social_spaces_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\treasure_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\workshop_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\world_access_repository.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\sql_connection.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\mysql\sql_mutation.cpp">
+      <Filter>src\persistence\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\process\ds_agent.cpp">
+      <Filter>src\operations\process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\operations\process\child_process.cpp">
+      <Filter>src\operations\process</Filter>
+    </ClCompile>
+    <ClInclude Include="..\src\application\background_task_executor.h">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\entry_points.h">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\error.h">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\event_logger.h">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\generated\unicode16_category_c_ranges.inc">
+      <Filter>src\application\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\identifier.h">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\operation_id.h">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\system_clock.h">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\utf8.h">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\openssl_credential_crypto.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\openssl_match_id_source.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\openssl_operation_id_source.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\openssl_sha256.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\openssl_treasure_random_source.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\openssl_workshop_random_source.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\windows_cng_credential_crypto.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\windows_cng_match_id_source.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\windows_cng_operation_id_source.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\windows_cng_sha256.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\account_credentials.h">
+      <Filter>src\features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\authentication.h">
+      <Filter>src\features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\credential_crypto.h">
+      <Filter>src\features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\launcher_authentication.h">
+      <Filter>src\features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\world_access.h">
+      <Filter>src\features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\bomb_maps.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\captain_assignments.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\combat_relay.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\crazy_racing_match.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\durable_match_settlement_flow.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\event_mole_objects.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\event_mole_profile.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\extreme_racing_maps.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\extreme_racing_match.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\extreme_racing_scene.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\bomb_maps.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\crazy_racing_maps.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\event_mole_profile_data.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\extreme_racing_maps.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\extreme_racing_objects.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\extreme_racing_scene.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\horde_guardian_maps.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\native_bomb_supplies.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\native_infection_supplies.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\native_map_durations.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\native_map_spawns.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\native_sniper_supplies.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\native_team_spawn_maps.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\native_team_spawn_mode_maps.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\zombie_pve_loadouts.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\zombie_pve_rescues.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\zombie_pve_spawns.inc">
+      <Filter>src\features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\hide_seek_geometry.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\hide_seek_match.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\ice_service.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\infection_match.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_id.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_lifecycle_repair.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_objectives.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_preparation.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_result.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_reward.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_settlement.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_settlement_dispatcher.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_start.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\match_terminal.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\mode_weapon.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\native_item_rules.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\native_match_duration.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\native_projectile_counts.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\native_survival_tables.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\native_team_spawn.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\pirate_map_agents.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\pirate_maps.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\pirate_match.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\sniper_weapon.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\survival_loot.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\weapon_master_match.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\zombie_pve_maps.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\zombie_pve_match.h">
+      <Filter>src\features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\character.h">
+      <Filter>src\features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\character_creation.h">
+      <Filter>src\features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\generated\hotblood_stats_data.inc">
+      <Filter>src\features\characters\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\generated\name_policy_words.inc">
+      <Filter>src\features\characters\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\hotblood_stats.h">
+      <Filter>src\features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\level_icon.h">
+      <Filter>src\features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\name_policy.h">
+      <Filter>src\features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\native_title.h">
+      <Filter>src\features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\native_title_profile.h">
+      <Filter>src\features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\nickname.h">
+      <Filter>src\features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\chat\chat_blocks.h">
+      <Filter>src\features\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\chat\generated\message_policy_words.inc">
+      <Filter>src\features\chat\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\chat\megaphone.h">
+      <Filter>src\features\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\chat\megaphone_event.h">
+      <Filter>src\features\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\chat\message_policy.h">
+      <Filter>src\features\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\chat\user_message.h">
+      <Filter>src\features\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\clans\clan_service.h">
+      <Filter>src\features\clans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\configuration\mysql_settings.h">
+      <Filter>src\features\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\configuration\server_config.h">
+      <Filter>src\features\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\configuration\service_rules.h">
+      <Filter>src\features\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\gifts\gift_store.h">
+      <Filter>src\features\gifts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\clothing_attributes.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\clothing_set.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\equipment_service.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\generated\clothing_attributes_data.inc">
+      <Filter>src\features\inventory\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\generated\clothing_sets_data.inc">
+      <Filter>src\features\inventory\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\inventory_discard.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\item_attribute.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\item_use_service.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\key_map.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\life_attendance.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\life_attendance_journal.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\life_attendance_tracker.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\life_item.h">
+      <Filter>src\features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\lobby\lobby_minigame.h">
+      <Filter>src\features\lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\lobby\player_menu_snapshot.h">
+      <Filter>src\features\lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\generated\single_play_missions.inc">
+      <Filter>src\features\practice\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\horde_tutor_match.h">
+      <Filter>src\features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\horde_tutor_profile.h">
+      <Filter>src\features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\local_horde_tutor.h">
+      <Filter>src\features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\local_single_play.h">
+      <Filter>src\features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\training_dummy_data.h">
+      <Filter>src\features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\training_room.h">
+      <Filter>src\features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\training_room_match.h">
+      <Filter>src\features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\tutorial_session.h">
+      <Filter>src\features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\client\hide_seek_assets.h">
+      <Filter>src\features\rooms\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\client\hide_seek_state.h">
+      <Filter>src\features\rooms\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\dedicated_room.h">
+      <Filter>src\features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\generated\room_item_catalog.inc">
+      <Filter>src\features\rooms\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_command_flow.h">
+      <Filter>src\features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_coordinator.h">
+      <Filter>src\features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_item_policy.h">
+      <Filter>src\features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_lease.h">
+      <Filter>src\features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_ownership.h">
+      <Filter>src\features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_runtime.h">
+      <Filter>src\features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\scenes\generated\map_regions.inc">
+      <Filter>src\features\scenes\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\scenes\hide_seek_scene_assets.h">
+      <Filter>src\features\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\scenes\native_wb_scene.h">
+      <Filter>src\features\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\scenes\native_x_scene.h">
+      <Filter>src\features\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\scenes\native_x_stream.h">
+      <Filter>src\features\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\scenes\plaza_coordinator.h">
+      <Filter>src\features\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\scenes\plaza_directory.h">
+      <Filter>src\features\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\mystery_shop_service.h">
+      <Filter>src\features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\purchase.h">
+      <Filter>src\features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\purchase_service.h">
+      <Filter>src\features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\shop_catalog.h">
+      <Filter>src\features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\treasure_service.h">
+      <Filter>src\features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\workshop_service.h">
+      <Filter>src\features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\social\couple_service.h">
+      <Filter>src\features\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\social\social_query.h">
+      <Filter>src\features\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\social\social_service.h">
+      <Filter>src\features\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\social\social_spaces.h">
+      <Filter>src\features\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\social\social_target.h">
+      <Filter>src\features\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\clan_tcp_server.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\equipment_relay_handler.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\gateway_opcode_routes.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\gateway_session_handler.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\gift_handler.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\ice_network_service.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\launcher_authentication_handler.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\operational_http_server.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\room_ds_service.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\room_gateway.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\room_gateway_state.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\room_rpc_client.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\room_tls_channel.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\room_value_codec.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\tcp_server.h">
+      <Filter>src\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\operations\admin\moderation.h">
+      <Filter>src\operations\admin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\operations\async_file_logger.h">
+      <Filter>src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\operations\database_task_pool.h">
+      <Filter>src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\operations\process\child_process.h">
+      <Filter>src\operations\process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\operations\process\ds_agent.h">
+      <Filter>src\operations\process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\operations\system_utc_clock.h">
+      <Filter>src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\operations\utf8_path.h">
+      <Filter>src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\file_life_attendance_journal.h">
+      <Filter>src\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\admin_maintenance.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\character_creation_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\chat_block_store.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\clan_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\connection_pool.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\couple_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\equipment_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\generated\table_keys.inc">
+      <Filter>src\persistence\mysql\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\gift_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\item_attributes.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\item_use_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\key_map_store.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\launcher_authentication_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\level_icon_store.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\life_attendance_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\lobby_minigame_store.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\login_ticket_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\match_preparation_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\match_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\migration_runner.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\mystery_shop_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\native_title_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\player_menu_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\purchase_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\room_lease_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\schema_verifier.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\service_rules_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\shop_catalog_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\social_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\social_spaces_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\sql_connection.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\treasure_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\tutorial_session_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\user_host_prize_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\workshop_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\world_access_repository.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\mysql\world_process_guard.h">
+      <Filter>src\persistence\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\combat_messages.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\extreme_racing_messages.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\hide_seek_assets.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\hide_seek_wire.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\match_transition_messages.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\native_progression_messages.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\npc_messages.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\smart_ping_messages.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\special_mode_messages.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\weapon_master_messages.h">
+      <Filter>src\protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\characters\fighter_ranking_messages.h">
+      <Filter>src\protocol\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\chat\chat_block_messages.h">
+      <Filter>src\protocol\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\chat\chat_messages.h">
+      <Filter>src\protocol\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\clans\clan_messages.h">
+      <Filter>src\protocol\clans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\frame_codec.h">
+      <Filter>src\protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\limits.h">
+      <Filter>src\protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\packet_io.h">
+      <Filter>src\protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\text_codec.h">
+      <Filter>src\protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\internal\room_envelope.h">
+      <Filter>src\protocol\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\inventory_messages.h">
+      <Filter>src\protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\key_map_messages.h">
+      <Filter>src\protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\lobby\lobby_minigame_messages.h">
+      <Filter>src\protocol\lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\lobby\menu_messages.h">
+      <Filter>src\protocol\lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\gateway_messages.h">
+      <Filter>src\protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\equipment_relay_messages.h">
+      <Filter>src\protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_item_messages.h">
+      <Filter>src\protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_messages.h">
+      <Filter>src\protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_network_messages.h">
+      <Filter>src\protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\user_host_messages.h">
+      <Filter>src\protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\plaza_messages.h">
+      <Filter>src\protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\scene_messages.h">
+      <Filter>src\protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\scene_session_messages.h">
+      <Filter>src\protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\mystery_shop_messages.h">
+      <Filter>src\protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\shop_catalog_messages.h">
+      <Filter>src\protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\treasure_messages.h">
+      <Filter>src\protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\workshop_messages.h">
+      <Filter>src\protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\social\couple_messages.h">
+      <Filter>src\protocol\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\social\social_messages.h">
+      <Filter>src\protocol\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\clan_ticket_broker.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\couple_flow.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\equipment_relay_broker.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\gateway_login_flow.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\gateway_session_state.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\hide_seek_session.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\latency_histogram.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\outbound_message.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\service_runtime.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\session_registry.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\session_transport_core.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\social_command_flow.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\social_spaces_flow.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\world_coordinator.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\world_executor.h">
+      <Filter>src\sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\include\juice\juice.h">
+      <Filter>third_party\libjuice\include\juice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\addr.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\agent.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\base64.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\conn.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\conn_mux.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\conn_poll.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\conn_thread.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\const_time.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\crc32.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\hash.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\hmac.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\ice.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\log.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\picohash.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\random.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\server.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\socket.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\stun.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\tcp.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\thread.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\timestamp.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\turn.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libjuice\src\udp.h">
+      <Filter>third_party\libjuice\src</Filter>
+    </ClInclude>
+    <None Include="..\src\persistence\migrations\0001_schema.sql">
+      <Filter>src\persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\0001_schema_contract.json">
+      <Filter>src\persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\0001_seed.sql">
+      <Filter>src\persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\0002_remove_retired_services.sql">
+      <Filter>src\persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\0002_remove_retired_services_contract.json">
+      <Filter>src\persistence\migrations</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+# Build outputs, dependency downloads and Visual Studio local state.
+/Artifacts/
+/.vs/
+/bin/
+/out/
+/dist/
+/vcpkg_installed/
+*.vcxproj.user
+*.suo
+*.user
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
+
+# Machine-local configuration, database data and credentials.
+/Local/
+/runtime/
+/logs/
+/config/server.conf
+/config/login.conf
+/config/admin.conf
+/config/migrate.conf
+*.password
+*.key
+*.pem
+*.pfx
+.env
+.env.*
+!.env.example
+
+# Development-only files are not part of this source distribution.
+/tests/
+/tools/
+/scripts/
+__pycache__/
+*.py[cod]

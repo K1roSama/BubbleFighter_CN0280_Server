@@ -1,0 +1,1292 @@
+[
+  {
+    "kind": "table",
+    "name": "TransactionLocks",
+    "sha256": "978e32281442a5531a76a2ca44ca024ee67f9a4fb89b52595f50da08db5643a6"
+  },
+  {
+    "kind": "table",
+    "name": "AccountCredentials",
+    "sha256": "af643ad2c95ef681365a3a7e7d4a4aa443a543244005c1724dfe5aca197e4123"
+  },
+  {
+    "kind": "table",
+    "name": "AccountDeviceLogins",
+    "sha256": "5541e99719fbc3a1cae22528c72d64e529c4940f7ef77e163c1be2b0657b2b88"
+  },
+  {
+    "kind": "table",
+    "name": "AccountDevices",
+    "sha256": "bff7977af2c8de84a5e9836b1040212e08bdcbe4c50107e8c350ae87bb8cd639"
+  },
+  {
+    "kind": "table",
+    "name": "AccountEmails",
+    "sha256": "0dd36c44afa375d661a1ae49b2582224170a551a55b32eb4aed035e7f087b6f8"
+  },
+  {
+    "kind": "table",
+    "name": "Accounts",
+    "sha256": "c306d135a22dc7be1578129d2aec6ec939d5a1ce92a246c2ffe47af6c372fd0c"
+  },
+  {
+    "kind": "table",
+    "name": "AdminAuditEvents",
+    "sha256": "35305d3b6aee56657a7cbabfe7f90650da4f04ea19fdc5c216356e3a104d17e7"
+  },
+  {
+    "kind": "table",
+    "name": "BubbleDraws",
+    "sha256": "f0acb4ee944c9cb3eb8a045dda687f4d353e3c3234a72faaa587e8a87f9d9a4b"
+  },
+  {
+    "kind": "table",
+    "name": "ChatPenaltyHistory",
+    "sha256": "003e12f9dc1458f7da9ea3fbe24034f5d4928a024e155e942c3bf7dbd27897d1"
+  },
+  {
+    "kind": "table",
+    "name": "ClanActivityGrants",
+    "sha256": "9767912791570af4a31c7877af7e25109e7aa1149a168c2222955470a7ec356c"
+  },
+  {
+    "kind": "table",
+    "name": "ClanApplications",
+    "sha256": "47f53e29042d66030151edbd657a9e461cda3b2c14a51ba6c70b630c84c1264b"
+  },
+  {
+    "kind": "table",
+    "name": "ClanAuditEvents",
+    "sha256": "e60a2eb08c1bb40382835a7646dcb6f41ba13cb6d7e9228982bf7e3cfde36ded"
+  },
+  {
+    "kind": "table",
+    "name": "ClanDisbandRequests",
+    "sha256": "3de253d2a4f5a5b630ee3d77fc0c30b5c1d8863457eabba4b4bebe58d2d9d0cd"
+  },
+  {
+    "kind": "table",
+    "name": "ClanLeadershipTransfers",
+    "sha256": "4dd5e5bf7dee92d34fb988b788590bfe2365c38c0d509afe35dae74b2e161c67"
+  },
+  {
+    "kind": "table",
+    "name": "ClanMatchSides",
+    "sha256": "a29e28b5fc1b35b7901492f3a48377cc3945c03f2fba898132fa80be9a4716d3"
+  },
+  {
+    "kind": "table",
+    "name": "ClanMemberships",
+    "sha256": "1cec97141fcfea9a77ea4bfa16f130bc8a2aae5086a59532d522f5843ea10470"
+  },
+  {
+    "kind": "table",
+    "name": "ClanMessages",
+    "sha256": "ac31e50093806bab14d3cb9ea0ce0aa31df8e3a48352ebb6f05ca4f864f80dbf"
+  },
+  {
+    "kind": "table",
+    "name": "ClanPosts",
+    "sha256": "727f11e0861643b57056f2222f2454990dcb2609c7f1ffd6ecd46d71544bcdae"
+  },
+  {
+    "kind": "table",
+    "name": "ClanStarterGrants",
+    "sha256": "f1ec324ffba3a61e57bade6ca2f3f1c2878c18663a243c1f0fc8fbf3db53063f"
+  },
+  {
+    "kind": "table",
+    "name": "Clans",
+    "sha256": "7c08c4ffd866309bcec7ee61a089a62c9806455ab7c5df8f72e157646ae05237"
+  },
+  {
+    "kind": "table",
+    "name": "ConfigurationVersions",
+    "sha256": "d27621b64a0cac9ff71c703266843331706e3afb66521d002ed89ebece30d8e7"
+  },
+  {
+    "kind": "table",
+    "name": "CoupleDailyGrants",
+    "sha256": "5e7980963e6c5ef73fc2b2e29c5d0e5c5c546adf7739feedc32f06f80b4a767e"
+  },
+  {
+    "kind": "table",
+    "name": "CoupleMembers",
+    "sha256": "1029c0317b9440da141640e0f6b72a2f03131ffb69a13c1b856da763c1c78fa8"
+  },
+  {
+    "kind": "table",
+    "name": "Couples",
+    "sha256": "0d73ff4301c0b8c76954ba0c9a9853c06d73378ba7ae88095bf609e839255aaa"
+  },
+  {
+    "kind": "table",
+    "name": "CouponRedemptions",
+    "sha256": "f026e7b8ae7efbee3fabc37439af8b37df6c81abc3baff59f82396c541728fc2"
+  },
+  {
+    "kind": "table",
+    "name": "Coupons",
+    "sha256": "340abf7164f9a1093133a69c43626982f4bc80158dcde3505d37f01c69d92d02"
+  },
+  {
+    "kind": "table",
+    "name": "DailyLoginRewards",
+    "sha256": "01dd6b98836c72d80f65e51949d6412221e6d1eb1124e22cc29841b805d0ce30"
+  },
+  {
+    "kind": "table",
+    "name": "DataImportBatches",
+    "sha256": "ea83bdb800c67584652e67eb7a5d8b8d41bddfc61726243ebe1ce3453b4de4db"
+  },
+  {
+    "kind": "table",
+    "name": "DsNodes",
+    "sha256": "23a18ac007caea773b16918ab8a00f536c54a6a89f1aa421e15af93be2bcb971"
+  },
+  {
+    "kind": "table",
+    "name": "EmailBindingSessions",
+    "sha256": "1ed27082899c86e42cabef9ae51caac9b3ef0ebcd6727baae371a8338fc1a5e5"
+  },
+  {
+    "kind": "table",
+    "name": "EmailVerificationChallenges",
+    "sha256": "ed1f947924ce5397a6f03640451335368dc0d5e7a3eec3e672bea67936194804"
+  },
+  {
+    "kind": "table",
+    "name": "ForensicsAttachments",
+    "sha256": "ad1bc5d7301dfe55a0419dd9965cb27d019ab9adea2c8d6e271e346bd616811d"
+  },
+  {
+    "kind": "table",
+    "name": "ForensicsReports",
+    "sha256": "08f1113581bdb9ce0d76112d78734ef8b377c9e7321ee56e3a9c0b83b371c644"
+  },
+  {
+    "kind": "table",
+    "name": "FriendCategories",
+    "sha256": "6907ef65af362599b9df09d65184e4412bb7781de78acfff255bbdc28ae7c9b7"
+  },
+  {
+    "kind": "table",
+    "name": "FriendCategoryMembers",
+    "sha256": "5477b537a3897b89fa7dcbd58ebbceb387608aa426bb6c81f665dbca89ea63de"
+  },
+  {
+    "kind": "table",
+    "name": "FriendRequests",
+    "sha256": "d5dbcd5d12d9118658621faf11691e6ee2393df76815de97588e65abb69340df"
+  },
+  {
+    "kind": "table",
+    "name": "Friendships",
+    "sha256": "424102fc0b9b34ce5b1fba60261f8ba7710d99f54eb5f533b7a17024b2d769ee"
+  },
+  {
+    "kind": "table",
+    "name": "GroupChatInvitations",
+    "sha256": "a0f4c99246836675ee259ef1be4e9898ab02ba885dbf40fbbd5f5cafbbfc8ef6"
+  },
+  {
+    "kind": "table",
+    "name": "GroupChatMembers",
+    "sha256": "05caeb5a23201cea4ccffece3a97d8b995c275a6d5c9d5507b74e7a1b3f26881"
+  },
+  {
+    "kind": "table",
+    "name": "GroupChatMessages",
+    "sha256": "3700bfa8d4be254d3402b3862068ab9d2b2d4016b0d37b80ef9b87f6c5fe54ed"
+  },
+  {
+    "kind": "table",
+    "name": "GroupChats",
+    "sha256": "7792678c9d8674cc47c4c07ca896a77e5d23c0a00c48b3de76504771e49f34f0"
+  },
+  {
+    "kind": "table",
+    "name": "HordeTutorSessions",
+    "sha256": "8d1d9de3d3690cdede8ab26f75bfbc52688c35f42aa98e8b357af416eaaaa9e0"
+  },
+  {
+    "kind": "table",
+    "name": "InstantRespawnUses",
+    "sha256": "411133fd828a6e01233f600aee3d47ceda5516de5fd1bef7531ceb6a72e741e8"
+  },
+  {
+    "kind": "table",
+    "name": "InventoryDiscards",
+    "sha256": "585f5dbbc954637c6b3583f480cfa132296aa31f83fd040b24df291b17c5b291"
+  },
+  {
+    "kind": "table",
+    "name": "InventoryTransactions",
+    "sha256": "2285c2f6254586147de18f39db3ecd80b6db276e80a165c13c10823e0e2c65eb"
+  },
+  {
+    "kind": "table",
+    "name": "ItemTemplates",
+    "sha256": "25eff61ce87649284ce9f70c97a39cfccc9309e0554dff717c34d93dfc759c63"
+  },
+  {
+    "kind": "table",
+    "name": "LifeAccountingEpoch",
+    "sha256": "ccb27a98add4094c3fb02c49f2008d2e03073d5726005ee593bd0116fbd828ce"
+  },
+  {
+    "kind": "table",
+    "name": "LifeAttendanceDays",
+    "sha256": "47e339e3bf22e7d8bbdc13d6e23007616824aa730f062f92b7f09208af38c056"
+  },
+  {
+    "kind": "table",
+    "name": "LifeGuardianEvents",
+    "sha256": "d53a78e575d16bf0878a2ae0824618927ed0224a8881555a8411b0e037b8bd5d"
+  },
+  {
+    "kind": "table",
+    "name": "LifeItemCursors",
+    "sha256": "c7127dfdb26df6bad87b2c672334e3e678f7a13ebfda759417997538706c37a0"
+  },
+  {
+    "kind": "table",
+    "name": "LifeItemSettlements",
+    "sha256": "b0324efc239bfcdd591e665652eae51bceb1a4405d339947731f4818561801b6"
+  },
+  {
+    "kind": "table",
+    "name": "LoginTickets",
+    "sha256": "a24028389bdc203a741c8c61a99fa8a89b7f94e675834290bd795f9c2aa8518a"
+  },
+  {
+    "kind": "table",
+    "name": "MachineDevices",
+    "sha256": "b64f230dd221b2e18d3d9e66ef911f3c3bf00957c9ac893140273cae6039a435"
+  },
+  {
+    "kind": "table",
+    "name": "MatchCoupleBenefits",
+    "sha256": "224fff8c6ca159db061c5a8381a4a4aa93e2d69f6535630f40af2759129e7726"
+  },
+  {
+    "kind": "table",
+    "name": "MatchParticipants",
+    "sha256": "0286ff7dea93cbc49e1f1fb90b40b841ab90e8a09395d58f25bcb998689bbd93"
+  },
+  {
+    "kind": "table",
+    "name": "MatchRewardGrants",
+    "sha256": "610fedc2572027b0f7e9a82c32f7f12fea24c845428288cec2d6b3ebef8aa4b5"
+  },
+  {
+    "kind": "table",
+    "name": "MatchSettlements",
+    "sha256": "8f9cfbfd98f79269b1d0b4a1c322fe9d60b4f6ad6dceda5dddac9b4183bcd1f7"
+  },
+  {
+    "kind": "table",
+    "name": "Matches",
+    "sha256": "ff3194334528238333c54373db708239b08e5160e8b510263e378b488cfb0427"
+  },
+  {
+    "kind": "table",
+    "name": "MegaphoneMessages",
+    "sha256": "a47bdaaff826a50db9b880eadc6b87fb9a6122181811bb7befe16699fa14e44c"
+  },
+  {
+    "kind": "table",
+    "name": "ModerationAudit",
+    "sha256": "f38d55fc7535e7cb4c9bc45dbaae4d37b50b5caa0144e429359c1e6252a665e0"
+  },
+  {
+    "kind": "table",
+    "name": "ModerationSanctions",
+    "sha256": "839e75c73be3e7bd2a21b2c3dc3441cbf86ccda0da7b57d6cb7a9a235acb7b4d"
+  },
+  {
+    "kind": "table",
+    "name": "MysteryShopSelections",
+    "sha256": "12bb8e13cd08fb1124db09285109cda975a520ba71236e2e8e6fd3d5cd285da6"
+  },
+  {
+    "kind": "table",
+    "name": "NativeMedalDefinitions",
+    "sha256": "c64b90ff2c3f7d6c8942a3b6dba0257f02ca8f72dd37fb5b1e255d34e83e6cd2"
+  },
+  {
+    "kind": "table",
+    "name": "NativeMedalEvents",
+    "sha256": "c01d48143d8246552c135f48279e91ea36d2651a8b9787a03d2f97b9d5e976d8"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleClaims",
+    "sha256": "824d006e0a862f25115b8771a3647badff90bf05cc93ab180c4777d45e5b25db"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleDefinitions",
+    "sha256": "0027c2264fd687eefa164b81cc12162163f9c4a62b94c07237beb94b26108653"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleEquipment",
+    "sha256": "b26332d34ce02e1cef434eb2a9ccdebe8c2ed4c2ade479c58a36b36bed68efc4"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleMedalDebits",
+    "sha256": "2609e881d98bf5e6903717b54293eb57e18bb1e62a9dbe6174b25bcd37940bc3"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleRequirements",
+    "sha256": "b68acb7907534077bc9227e559138d0a00ede0820b5be2459bd97e427fd48ba9"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleSelectionEvents",
+    "sha256": "9c1dddec0e09ba6f942ea67c8454add7842b5dec76dcddcdc2f50df997b3cb2f"
+  },
+  {
+    "kind": "table",
+    "name": "OperationRequests",
+    "sha256": "a3da22a7e1ef0a185c3b1b5ff7b6940158368e2e085407ce3c93c585c60018af"
+  },
+  {
+    "kind": "table",
+    "name": "OutboxEvents",
+    "sha256": "a368e426b75a2c2d39771cddd4556d5469101214d740aa8ed6ea71f72335c035"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerBlocks",
+    "sha256": "41b13627c13a25a804d579666588afc88813aa9397c6a7f39a9eaf076732fb0f"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerChatBlocks",
+    "sha256": "e2a33d0ec219c7280eda726d72c281e2c99167727195e285661afd29a04f24d4"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerEquipment",
+    "sha256": "a45643a4322404c72a8d86af34c1a076576b3c08b3af3ce363cfdbaaff9d5ccf"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerGiftItems",
+    "sha256": "4ccd0f487ffb412c8f470289e9239ea0604c4d7d505c0a0cea297650e4f223e3"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerGifts",
+    "sha256": "8fdfc9b15d60453cd2db3bfb90e80f2a2ebe1c3c64a06f586d6e40d25434edc3"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerItemAttributes",
+    "sha256": "d93b8b64198bd0394baaf044cd501433d2cc05bc2d62bf5799784b23c5925274"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerItems",
+    "sha256": "2f34f80ca9944c62768f074a8490945b364a1d9897c06ff0980c4e64f9110cb9"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerKeyBindings",
+    "sha256": "6d57f3cafc0aadb76ddf19df240fe94e111f49f31b6eaf2006e678161a6b898d"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerModeStatistics",
+    "sha256": "2011f1164204166ae9fbb014e817566070f7f5589a78c97b8a7da3227d42c5e2"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerPetGrowth",
+    "sha256": "b6efc3a50e8537a50b1b70530cb4d6690faca5bda023dea44626bd891469f0af"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerProfiles",
+    "sha256": "e0e25fd64c6c349f2da3826fc1e88f6816dc31f90ce4ddd771fa74fa93cd69c1"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerProgressions",
+    "sha256": "3c8e1ef57d6deb869141b3c469bb58b9237d423c4bee995aaf121bcbe41346ed"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerWallets",
+    "sha256": "287047764ff85dfdcdb4385ba96c61c826db6e3ad65231393d27d6694091c5b0"
+  },
+  {
+    "kind": "table",
+    "name": "PrivateMessages",
+    "sha256": "0ffee0e8e45bdce1db7857725a14cb32251a391f841f161a1370d0270bc7a77e"
+  },
+  {
+    "kind": "table",
+    "name": "PurchaseOrderItems",
+    "sha256": "2df31d374ad90b9c5d6376f92e917282984ffa541c68c11973a2120a00af0ebc"
+  },
+  {
+    "kind": "table",
+    "name": "PurchaseOrders",
+    "sha256": "59176c4158b7756e04ca6a08ba4e42ce8afd61afe1c0c2ca35e4a42080a2a96f"
+  },
+  {
+    "kind": "table",
+    "name": "RoomInstances",
+    "sha256": "4560da7b1b72301df910504e74222ebba39c223f911685f85cd836edfb6d3a0f"
+  },
+  {
+    "kind": "table",
+    "name": "ShopBundleItems",
+    "sha256": "ef4df2eb03fcbca00788dd75a0442729210b2e89fbbf766272c676c664561317"
+  },
+  {
+    "kind": "table",
+    "name": "ShopBundles",
+    "sha256": "f14ecef748a90e30c5afe6a88cb3a4293b41c0ea02e72d1985513046297f1823"
+  },
+  {
+    "kind": "table",
+    "name": "ShopOffers",
+    "sha256": "648325942b89f0c6334d5c287afc5139fe75da991dd51677e31ff4a22e319ada"
+  },
+  {
+    "kind": "table",
+    "name": "SinglePlayAttempts",
+    "sha256": "4342af700c7ddcc17c62b68c81869955f66e6fd951970c8d89e6bd23f54f409f"
+  },
+  {
+    "kind": "table",
+    "name": "SinglePlayMissions",
+    "sha256": "c4c75cfdb33bd9585e8825b9806cc668d7d580271b921417b17c4ba180a43864"
+  },
+  {
+    "kind": "table",
+    "name": "SoftwareBlocklist",
+    "sha256": "a6a6341294c71122312884a241537e20d4079b86721b2936cc7631169e54572a"
+  },
+  {
+    "kind": "table",
+    "name": "SoftwareDetections",
+    "sha256": "d8daf8bf272370935ed9961a43c1fff50360e12d154b4af5eb2c073e83ecd0b3"
+  },
+  {
+    "kind": "table",
+    "name": "UserHostPrizeClaims",
+    "sha256": "5c666d878d53ccae2762ffb2cd305523e51ff36bd3b2d2c2c58abe1648800de1"
+  },
+  {
+    "kind": "table",
+    "name": "UserHostPrizePayments",
+    "sha256": "f437fe19244a735b3a6e1cbbdb3f296202e9d56b5a2838264efbe521dd72d479"
+  },
+  {
+    "kind": "table",
+    "name": "UserHostPrizes",
+    "sha256": "efcfbbbd929c99db1f3ff93d99eace9e6039024fc84955901a1f21b1a919f404"
+  },
+  {
+    "kind": "table",
+    "name": "WalletTransactions",
+    "sha256": "b6c8b01bda4e17fdd5b2867203b7807bba8851e626f779e914608cf070174c09"
+  },
+  {
+    "kind": "table",
+    "name": "WorkshopOperations",
+    "sha256": "1a80ea7464a752db37050c4b5a5a82096fd179861260aa508f7617c0f8c16d17"
+  },
+  {
+    "kind": "table",
+    "name": "LegacyImportRows",
+    "sha256": "3b762df676c7a3a203b87f665a2468d2a00a6d866506be4478d50d0ed50a3362"
+  },
+  {
+    "kind": "table",
+    "name": "LegacyImportTables",
+    "sha256": "6f4936a858319bc0d7f476d8a3ffff0f646d01a126896d5f6d54b62f72ae56bc"
+  },
+  {
+    "kind": "table",
+    "name": "AccountCredentials",
+    "sha256": "2d1b57e5714d6f8cde8944ba109ae1fd08016d94e53b29366b99233872814de4"
+  },
+  {
+    "kind": "table",
+    "name": "AccountDeviceLogins",
+    "sha256": "c162e5f0ef9ec1d31868458ce421285437182bf22ce06101d85742b91ef0a3ad"
+  },
+  {
+    "kind": "table",
+    "name": "AccountDevices",
+    "sha256": "973f0a2393a2f9e607f22e54ce4c61fcdaea56224d8e50d1fae69d9e8154a63b"
+  },
+  {
+    "kind": "table",
+    "name": "AccountEmails",
+    "sha256": "3493cf47099ffd368c2b9d446bb44580fb1a049d1314f5567d0fa6e15aa59c33"
+  },
+  {
+    "kind": "table",
+    "name": "Accounts",
+    "sha256": "ba6efd7fd741118a50cba4e40d96009a6030fc4007ea068d6d5e4b074f5e40bc"
+  },
+  {
+    "kind": "table",
+    "name": "BubbleDraws",
+    "sha256": "06fefdc27f36473ca9f4c2b595f3053df290de27fefc72017a400630b2f1a120"
+  },
+  {
+    "kind": "table",
+    "name": "ChatPenaltyHistory",
+    "sha256": "b2adc57bf3aae1f24226912d0614845a1d2a061edc7e257f7e56b87402999b5c"
+  },
+  {
+    "kind": "table",
+    "name": "ClanActivityGrants",
+    "sha256": "09bb79b671587f16979fe83b5a02af93f900c61d40046fce7c9074f1086a92e9"
+  },
+  {
+    "kind": "table",
+    "name": "ClanApplications",
+    "sha256": "d2c98957b302bc8aec273986af076e13c91ee29bfe7e84cde1ff0e830076959e"
+  },
+  {
+    "kind": "table",
+    "name": "ClanAuditEvents",
+    "sha256": "80d552fd564168ee897f9c92f26894e2f2ecb62766aa21aeb4b79eafbb53cec8"
+  },
+  {
+    "kind": "table",
+    "name": "ClanDisbandRequests",
+    "sha256": "70aad004a72a07e3bc6c957ca2c0e0bae4cf260328d3bfe9e72e92772ac87119"
+  },
+  {
+    "kind": "table",
+    "name": "ClanLeadershipTransfers",
+    "sha256": "5b66170b39c199be4c8fb377b11479babdd6a4604cfa121701c93d0286172d90"
+  },
+  {
+    "kind": "table",
+    "name": "ClanMatchSides",
+    "sha256": "99c29316e415c53f8211451bb4c4c439851c8be35b7b52838c23ab93e93d3c76"
+  },
+  {
+    "kind": "table",
+    "name": "ClanMemberships",
+    "sha256": "c1dd2e743b36ffdf8c37bb910c5fa1664d3c3e918eedf7087c0b3be74cefeda5"
+  },
+  {
+    "kind": "table",
+    "name": "ClanMessages",
+    "sha256": "76e8742d15d50b5255a7c584afd9f9c9e421090fb42d66b7236d946366a03ee7"
+  },
+  {
+    "kind": "table",
+    "name": "ClanPosts",
+    "sha256": "eeac4057ac9aab1da4d3ad2abac097cdbbb1dfc944991c06d614299f902ccb48"
+  },
+  {
+    "kind": "table",
+    "name": "ClanStarterGrants",
+    "sha256": "0c26310a106723be7c21e12345b68f92e12c2516620d36dc5ac0b19dad2e10e3"
+  },
+  {
+    "kind": "table",
+    "name": "Clans",
+    "sha256": "8a5fc698697aaa6d81072bbd7e5068655efe28118da1dd73f60a4c109b483175"
+  },
+  {
+    "kind": "table",
+    "name": "CoupleDailyGrants",
+    "sha256": "dd8c515e270bfadc5d13f47242d1fb532ae9a0b94dadd0aa5a6ef68d479d1b30"
+  },
+  {
+    "kind": "table",
+    "name": "CoupleMembers",
+    "sha256": "e4a0d6ff649351a5bf949101b204989ca2845f90160985f2edb6ef605c55d13a"
+  },
+  {
+    "kind": "table",
+    "name": "Couples",
+    "sha256": "7647ae7b8c8939c84438b08bc3b092f24a9247a53c39e8ec16caa5d385bd8815"
+  },
+  {
+    "kind": "table",
+    "name": "CouponRedemptions",
+    "sha256": "691caaab91db0b47e5702f328b879e2d32cc08b79a7b87a8a302632c3b69b576"
+  },
+  {
+    "kind": "table",
+    "name": "Coupons",
+    "sha256": "fb79e0b4d2cfac09ce319c860d794c60a4010ead4964a1c0f80c1a4ee20c1228"
+  },
+  {
+    "kind": "table",
+    "name": "DailyLoginRewards",
+    "sha256": "64bb55b1eceae1860888381d196a27275546ac5d36d9e5625e3aabcf710a37f0"
+  },
+  {
+    "kind": "table",
+    "name": "EmailBindingSessions",
+    "sha256": "19e8c5526c9e16c7626e02225281ecc00c27048b8c8fae8150594a84c1f715b0"
+  },
+  {
+    "kind": "table",
+    "name": "EmailVerificationChallenges",
+    "sha256": "1424e36f340a0ff2148a443da0e0f3ec37411940be667d3490f1c8ef61994aa9"
+  },
+  {
+    "kind": "table",
+    "name": "ForensicsAttachments",
+    "sha256": "c1c4f37cbb4dcfc68dff3d210320c6d873bd4d517e08db94a47e52dda6eeb822"
+  },
+  {
+    "kind": "table",
+    "name": "ForensicsReports",
+    "sha256": "b00194b711e7b937e8e12cd58f336de729959739200688f3045f0a21c7907207"
+  },
+  {
+    "kind": "table",
+    "name": "FriendCategories",
+    "sha256": "297d214f593dcd8c3a4957a852883738f95946e109fa631488a177f01f9f8606"
+  },
+  {
+    "kind": "table",
+    "name": "FriendCategoryMembers",
+    "sha256": "b29d0b89dfa43c9d13571a34b49fbe80e5d0267d6af4e69dea40fd5ff4f1f0d4"
+  },
+  {
+    "kind": "table",
+    "name": "FriendRequests",
+    "sha256": "4be06062960be804858de992e0419e45cf698d6644260f430abf5ec80415fcd0"
+  },
+  {
+    "kind": "table",
+    "name": "Friendships",
+    "sha256": "e7c2df89c5da2388b0f517f106f779c72a21e2a8754fb30220c4ed05357666c7"
+  },
+  {
+    "kind": "table",
+    "name": "GroupChatInvitations",
+    "sha256": "94c819b50622e17cc6b076a10165574220f5072be695fdc057009ac1783fd541"
+  },
+  {
+    "kind": "table",
+    "name": "GroupChatMembers",
+    "sha256": "4dda92952de9eee8c7bc8b4f605472aa4a2ea7074e4f6e1cd40b4d64dc29e8e7"
+  },
+  {
+    "kind": "table",
+    "name": "GroupChatMessages",
+    "sha256": "59e4616b715e08e80d5c52723b20e0d05b98f451b02f19db693a3aef15ad41b7"
+  },
+  {
+    "kind": "table",
+    "name": "HordeTutorSessions",
+    "sha256": "7bda25ebfe472deac51177ec1d5d473988971baeaa78f6fd54aa487fefba2649"
+  },
+  {
+    "kind": "table",
+    "name": "InstantRespawnUses",
+    "sha256": "791b77c63007a538feca6f9bc242edcdaacbc2ce8048d91803deeac4b5d1418f"
+  },
+  {
+    "kind": "table",
+    "name": "InventoryDiscards",
+    "sha256": "3e568986c7c2ac55c0db077151844a9bd6d848b21383030b629c47838c3a83b2"
+  },
+  {
+    "kind": "table",
+    "name": "InventoryTransactions",
+    "sha256": "734a709759fcfb3acfb4da39e82affc1e51ad281a93216fe5b65bb6c528c17d1"
+  },
+  {
+    "kind": "table",
+    "name": "ItemTemplates",
+    "sha256": "aced6d31fa1abd6ca69cad09f650701118565f2942bb9b14421c4b535070de4c"
+  },
+  {
+    "kind": "table",
+    "name": "LifeAttendanceDays",
+    "sha256": "4e6902de786008f25fa745a5eefc62b2fe937f0ae6da567478c5aa3795e4328b"
+  },
+  {
+    "kind": "table",
+    "name": "LifeGuardianEvents",
+    "sha256": "f657a6f52b9f3929a07a1d304c202d006602856234fabafb99233f56fe2c5e92"
+  },
+  {
+    "kind": "table",
+    "name": "LifeItemCursors",
+    "sha256": "292a677beee1188a81566dd55c4e605896a4b3e834208fca498587b0ecbd2e00"
+  },
+  {
+    "kind": "table",
+    "name": "LifeItemSettlements",
+    "sha256": "15e46339ee914449ac6c17348902f93ce40d011be8e71a5233e8538412a92f7f"
+  },
+  {
+    "kind": "table",
+    "name": "LoginTickets",
+    "sha256": "141ea814417151353fb30aacd713506e89386f0f305778a68b9403bc88b01a09"
+  },
+  {
+    "kind": "table",
+    "name": "MatchCoupleBenefits",
+    "sha256": "e3d00ea840c79963d9f4dcb1999005b2ecf61c62d1d2dbfa14df25f56250f9de"
+  },
+  {
+    "kind": "table",
+    "name": "MatchParticipants",
+    "sha256": "3ad1c6bd2403b8e987be2123a924ee0be6bd71ae62623ed3633ae7cacbe336a0"
+  },
+  {
+    "kind": "table",
+    "name": "MatchRewardGrants",
+    "sha256": "cd58d95a34c4da3e9f14aaabe800ed58ab9214bf5222fa42883009d8867bce01"
+  },
+  {
+    "kind": "table",
+    "name": "MatchSettlements",
+    "sha256": "ccddcedf303833c7b30fbce92d4b9aa71cc01a33cda338d9ddd278d0df8cc088"
+  },
+  {
+    "kind": "table",
+    "name": "Matches",
+    "sha256": "760b7ff79a3d1a7067c9e1202f8d80adcd4b282c1ec3eb533c6d7c52da5b2520"
+  },
+  {
+    "kind": "table",
+    "name": "MegaphoneMessages",
+    "sha256": "e403c231ccb25f170f181e7bf1755eccf7d780bf5b4d2123d96b4d404843a11f"
+  },
+  {
+    "kind": "table",
+    "name": "ModerationAudit",
+    "sha256": "50708b7021ff602febc9aaefeb344136163ef786d31476d33f27230f54790fbd"
+  },
+  {
+    "kind": "table",
+    "name": "ModerationSanctions",
+    "sha256": "6f110207742f77e18dbfaa7d499cd557fe024980d1ef16c325fee684c5649e93"
+  },
+  {
+    "kind": "table",
+    "name": "MysteryShopSelections",
+    "sha256": "c0012d9ba82720b3757cdc362f02484cf99b55c0f43043a918da8664c121c402"
+  },
+  {
+    "kind": "table",
+    "name": "NativeMedalEvents",
+    "sha256": "ff9cb889baf0320c565826f0f3c25076b43d92ceca713146afbb0a6aa0a3a7a3"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleClaims",
+    "sha256": "4b5dd075e44b930c92673f16595dc27f4c200045b09b84332d8dbede7befead8"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleEquipment",
+    "sha256": "19e0ce524374be89aa20c785af9cf590bbdc5df2fb2765fc2e8badb6a41d66d0"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleMedalDebits",
+    "sha256": "d33205344457adebea0b3785bfbcd1720fc28a60714880d74e4d1419f1cf277b"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleRequirements",
+    "sha256": "97121baf5825bbdcb2af1272f53eee41ad8ead3b39dff88d4ae5d5b0288d8d22"
+  },
+  {
+    "kind": "table",
+    "name": "NativeTitleSelectionEvents",
+    "sha256": "5156ccb9551321dd24707950f55951427a0073942dfc91410399acc1f958c316"
+  },
+  {
+    "kind": "table",
+    "name": "OperationRequests",
+    "sha256": "c8146dd0aa26be1168f51bf1b2136299c60f38e0f180cefddebba02c9509f6e8"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerBlocks",
+    "sha256": "8f9c1f1516a80d4f250a96b5c902536ae24f6de139b22b9c2a01e82b8fba8fb2"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerChatBlocks",
+    "sha256": "f063e3fafaba14173e610452b737a671f1098a119b82d86b0d15434768420eb4"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerEquipment",
+    "sha256": "c4fb71584de7161dbdce4375dee1b05c41d7d1da01ce0f061e6d3752dc615cc1"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerGiftItems",
+    "sha256": "c6795a935fdfe99e016617f7f24eb7706f57ee8777aadc1999f85b1a1d42fbee"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerGifts",
+    "sha256": "b307ada89602f240b64888af9966e7614430a5e9e40ca7453495545d257f9e7b"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerItemAttributes",
+    "sha256": "a745c072d9ebe2a9a4d8b87e12cbcaff96ab159526238395c00a8d399fc5dd84"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerItems",
+    "sha256": "2e203a7c664adc940bf61c8d524bff6c9d24884350e86fa7d604d20bf063cc57"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerKeyBindings",
+    "sha256": "e3e151e997d13ccb0ec7d29d1b9865c4933916caba0f64205adfa343b3f3b127"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerModeStatistics",
+    "sha256": "2960a75fd11550fb4b0122145b32902fbc73f7ff925633f519eb61737310298f"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerPetGrowth",
+    "sha256": "7f9da5535b0248062b4b87b2d23650158d52f808559ed9887efd809720076444"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerProfiles",
+    "sha256": "1afe8cd1990baf3c86839385e70b913892c75e7554f5edbc8c7cce3f36154bd3"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerProgressions",
+    "sha256": "a917775f1597e366fcc7debd400e374aa77839ed4a0859bc6c517b43a2ab139c"
+  },
+  {
+    "kind": "table",
+    "name": "PlayerWallets",
+    "sha256": "c850734e5ae189ea95fab6e9455bb775edb20313460211b0f8ae128bcae90e4f"
+  },
+  {
+    "kind": "table",
+    "name": "PrivateMessages",
+    "sha256": "e569699cac0fe14eaeccde482dd93684804913456345182221907ca98db1c3c8"
+  },
+  {
+    "kind": "table",
+    "name": "PurchaseOrderItems",
+    "sha256": "ddc2fbb7a939a1f8f07bd4cc296a05fc21811478bdc815fab9a6658e5c2bff9d"
+  },
+  {
+    "kind": "table",
+    "name": "PurchaseOrders",
+    "sha256": "626fd2a1a2eb607f24b17c38bd9c2739c334202d83eef648fa76267f602afa69"
+  },
+  {
+    "kind": "table",
+    "name": "RoomInstances",
+    "sha256": "0a16c956b0db06142f812190ac71e92c693e7df95e87aab32d8f43cc092f032e"
+  },
+  {
+    "kind": "table",
+    "name": "ShopBundleItems",
+    "sha256": "98d6c30ebe9d8723a6d37183e8174133628a7e0d51e50c9aa1d2618ad5cc6ad6"
+  },
+  {
+    "kind": "table",
+    "name": "ShopBundles",
+    "sha256": "56da5d53d595f664c1c1d9b39abaa205821619c2a623037b7bc99e82489cb685"
+  },
+  {
+    "kind": "table",
+    "name": "ShopOffers",
+    "sha256": "8953ad1b2a4b076f8fb4c13c7432f8951a460e8d46719bce5457f53a908dad1d"
+  },
+  {
+    "kind": "table",
+    "name": "SinglePlayAttempts",
+    "sha256": "91c5fb8bf7b6c5c251f9ee1e58d493db6ee267fd732bf4bcbc88615390b01843"
+  },
+  {
+    "kind": "table",
+    "name": "SoftwareDetections",
+    "sha256": "5a27b4fabe18d20da90047906243afead14c7e51a359738a1a651efbb04c27b6"
+  },
+  {
+    "kind": "table",
+    "name": "UserHostPrizeClaims",
+    "sha256": "8830445564df93b92945841e8393239a2731b3cf69f96dab02137453869df00b"
+  },
+  {
+    "kind": "table",
+    "name": "UserHostPrizePayments",
+    "sha256": "b1fb1379337ea2b720b8ad9a557a3620f5cb5bf733a18bbaf39ae382e34fa47d"
+  },
+  {
+    "kind": "table",
+    "name": "UserHostPrizes",
+    "sha256": "1d4539fa4ec081037c1e627e9cd6fbff12b6a4084f1832610c52aa0cadbbac0c"
+  },
+  {
+    "kind": "table",
+    "name": "WalletTransactions",
+    "sha256": "3258fd10388f4ef97cd7bf2520eda1752361cfdb6de19606f6ce5f5da8e67372"
+  },
+  {
+    "kind": "table",
+    "name": "WorkshopOperations",
+    "sha256": "d3f78bca066659adb7ff57830794a2fde063e13463695cae56e6bed2a04de71f"
+  },
+  {
+    "kind": "table",
+    "name": "LegacyImportRows",
+    "sha256": "7696986d03c90ef1382db3d4bb7858fb44ff1b48b8c8365746b1443d914cf82f"
+  },
+  {
+    "kind": "table",
+    "name": "LegacyImportTables",
+    "sha256": "1c2331f6c5fa92ec854afd3a788393a8984cca4fcc423c9307d80ccec1b7e7c2"
+  },
+  {
+    "kind": "function",
+    "name": "AccessoryMask",
+    "sha256": "a4294f2e566bc6125b379ea6187ab8acdc26cb3ea743058fd583767059d9a146"
+  },
+  {
+    "kind": "function",
+    "name": "AccountBanActive",
+    "sha256": "1e39026727e0ed59b63a3a655d24d031dc931224acc8d85ba940bac54d857903"
+  },
+  {
+    "kind": "function",
+    "name": "ClanMatchActivityPoints",
+    "sha256": "daf1f9413873f07e3ecc9139584e02e856b52d24b7bf0b2b9dab7adfe519036c"
+  },
+  {
+    "kind": "function",
+    "name": "ClothingCharacterMask",
+    "sha256": "a96bb0f95bf8ede9574f26362402ea7927d1a83f9ae8eaa8a29f75560caf90e4"
+  },
+  {
+    "kind": "function",
+    "name": "ClothingMask",
+    "sha256": "c2589598b4298c0ad1fe3989d51c32f3c14013917b6ee5b251d67383ad659d48"
+  },
+  {
+    "kind": "function",
+    "name": "EquippedCharacter",
+    "sha256": "ff99e6907187b7f21a3069b79a472564a9a0072eee2f80ccd095d5592f9e1ed2"
+  },
+  {
+    "kind": "function",
+    "name": "IsAdvancedClothingItem",
+    "sha256": "152d70fa4539f5bd3fe41b08bf295bbf9e19bac64d1d94ea1379db0040dd2126"
+  },
+  {
+    "kind": "function",
+    "name": "IsLifeItem",
+    "sha256": "438341d0975fa5a6dfaa3e3bcf0cf7e0e79a82dd72b1795e9db630a99e1896b2"
+  },
+  {
+    "kind": "function",
+    "name": "SoftwareBlocklistAction",
+    "sha256": "75642e94bfa7e938150a72277492b82432baa524d0c3106a24aca5dd574f2c6d"
+  },
+  {
+    "kind": "function",
+    "name": "SoftwareBlocklistBanSeconds",
+    "sha256": "85cd4840b1ac5ef56c53f2e2a122e9e490b77ca9e4db22a4ce1b7506a1e5b88d"
+  },
+  {
+    "kind": "view",
+    "name": "ClanActivityTotals",
+    "sha256": "42d133b916da7c5b0b90f82ca07ce40474f51a063059f3a0cc1f333acb524170"
+  },
+  {
+    "kind": "view",
+    "name": "LifeGuardianPeriods",
+    "sha256": "8aac256ab582bb3238a4886eb15df9249e79fd040c1599754a8c05159236a3b3"
+  },
+  {
+    "kind": "view",
+    "name": "NativeMedalProgress",
+    "sha256": "bca01c528a7173fff08e0479039b52570bee18a54976f02ed32314145c448ce7"
+  },
+  {
+    "kind": "view",
+    "name": "SinglePlayProgress",
+    "sha256": "19115589328f2cfaa496354020c68102c20c460d246b620b4c4bc5a68963313b"
+  },
+  {
+    "kind": "function",
+    "name": "EquipmentSlot",
+    "sha256": "9265a4c1c940ffcf3440ab0f6f299e1da039c528c568620c5a11526c911ce53f"
+  },
+  {
+    "kind": "view",
+    "name": "PlayerModerationState",
+    "sha256": "763897abd4cda41f7c2b9fbf1a2a425e8b9780eb3ba7a115eef84a9e0d18b2f2"
+  },
+  {
+    "kind": "function",
+    "name": "ClothingCharacterCompatible",
+    "sha256": "a366abbff1e31638a4290398b86323f97f1287ac36dc6328b36332a829c240bd"
+  },
+  {
+    "kind": "view",
+    "name": "NativeMedalBalances",
+    "sha256": "25000a988b9005ae0219df77a981189f3b9b1b57826d40d91bb64f5151182e6c"
+  },
+  {
+    "kind": "function",
+    "name": "PlayerChatDenied",
+    "sha256": "8434e31b6acff5c0eac9f192a6cdabfaee8071189927b1d0cf6a01773eb190da"
+  },
+  {
+    "kind": "trigger",
+    "name": "CkFriendCategoriesInsert",
+    "sha256": "8bfa61b313d568e3fa31731c7f2ecfa1e295cde44ebb08b03c5432720f704d5e"
+  },
+  {
+    "kind": "trigger",
+    "name": "CkFriendCategoriesUpdate",
+    "sha256": "8960f6bb3eb17487b3419a87410e7e37fc8ef3ad50754c0e4ed7efb74c6dc989"
+  },
+  {
+    "kind": "trigger",
+    "name": "CkGroupChatsInsert",
+    "sha256": "71d86d563367d26ee01d9b9a70f61524555a9c6bec5897e46a0c18a9d45d6b70"
+  },
+  {
+    "kind": "trigger",
+    "name": "CkGroupChatsUpdate",
+    "sha256": "cf3b2ac110091259feffeac73f98a029028373bf3a333b6e48f6b7cbf8cc3d0f"
+  },
+  {
+    "kind": "trigger",
+    "name": "CkPlayerGiftsInsert",
+    "sha256": "06fe7a7ec845b281842b1efad528f44083a0285a3dbb9a70b849eff2de45bc1f"
+  },
+  {
+    "kind": "trigger",
+    "name": "CkPlayerGiftsUpdate",
+    "sha256": "dc867787edfc5d676caa88a9baa20b836d19fcb33e03848709b90cd6fff3cba3"
+  },
+  {
+    "kind": "trigger",
+    "name": "CkPlayerChatBlocksInsert",
+    "sha256": "956f2e37d63aedc388189a615be2a5eacefb1a0413d4845169f48c756feb763c"
+  },
+  {
+    "kind": "trigger",
+    "name": "CkPlayerChatBlocksUpdate",
+    "sha256": "514597d1803fd605c04036534521cc387e005606841c04987a174e49d443de37"
+  },
+  {
+    "kind": "trigger",
+    "name": "InventoryDiscardsUpdateGuard",
+    "sha256": "5676adcdfb712db0cf67da08e5f1981081be303dd44e8d501af663a9de818bcd"
+  },
+  {
+    "kind": "trigger",
+    "name": "InventoryDiscardsDeleteGuard",
+    "sha256": "9ca4918095837e95af3869128c7adb7ab75fe219a5c420d77b00d121405ff5a3"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeAccountingEpochUpdateGuard",
+    "sha256": "5e6c3324bff48f97ad4397f007d95843a9b083ddf5d83497e766ea0e4276e9a0"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeAccountingEpochDeleteGuard",
+    "sha256": "e07d19ce145bfbcd3d53065d59e3fc902f2831f80aae2b6d5eb31c060c5813ad"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeAttendanceDaysUpdateGuard",
+    "sha256": "f393a81b9f3e9e6c24d39f1ddc977433f0680cbac600fd0362c43be20d334dc3"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeAttendanceDaysDeleteGuard",
+    "sha256": "5f2547726090c8e31281089e500893fe86870befa324422f6abdcee971042497"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeGuardianEventsUpdateGuard",
+    "sha256": "09685efbd54337a659b49e4e508277205c91c1d529b6857f62962013b23f9712"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeGuardianEventsDeleteGuard",
+    "sha256": "393b78d6251d151279fb9a4d51cd747f39b7f34bd535a49fe86fd365428bb486"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeItemSettlementsUpdateGuard",
+    "sha256": "9e38dab77efde70563d282ca22dca7389ce371f776f62dbf59cbe1793ec7c4f6"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeItemSettlementsDeleteGuard",
+    "sha256": "0efc4fd298948f13c50af36c20abc95b17b9741395a30602674578a4ff6ea2ed"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeMedalEventsUpdateGuard",
+    "sha256": "b18e0873d0044f36f77f553ad26a992c43d6842a84b95e3e65fd02e60fb7a373"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeMedalEventsDeleteGuard",
+    "sha256": "7bf07ed45f7207425c372a180c9b34a2e6c50641c349a9e9da222ca4a1645507"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleClaimsUpdateGuard",
+    "sha256": "50a5032f443785fd557f66cee3c2baa08ae03be589efa89d235edff441555eef"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleClaimsDeleteGuard",
+    "sha256": "a97eac1de296cf5b448d04131109328fd68d6d7438050798ef6da9cd461c9fa6"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleMedalDebitsUpdateGuard",
+    "sha256": "ea270154b557d2feb353ac92b7a0adb7ef12acb77f17e6ef187dbf28aef586ff"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleMedalDebitsDeleteGuard",
+    "sha256": "0a627b06ab1f345c41f0c52a17e2c1fbd15e902eb52654d2a812a3da35393475"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleSelectionEventsUpdateGuard",
+    "sha256": "3bc37117719a66b1c45797ed2f6632759d64e0945dc6a1f0a750be4df7d39cca"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleSelectionEventsDeleteGuard",
+    "sha256": "8dbea33eb8f7b76d102dc1075760e5f345fc62a9bdfb8baf884793a0bbaaa5ad"
+  },
+  {
+    "kind": "trigger",
+    "name": "PlayerGiftItemsUpdateGuard",
+    "sha256": "0fef38a248d3668683f55f129ca60299f270cfab34f2a64815f4402e33683bc3"
+  },
+  {
+    "kind": "trigger",
+    "name": "PlayerGiftItemsDeleteGuard",
+    "sha256": "8c89c0af1d96d482b19a7681c9bdec610ea721746b16cb43dbc2e8f6f9bbb814"
+  },
+  {
+    "kind": "trigger",
+    "name": "HordeTutorHistoryDelete",
+    "sha256": "2f339fb1b4b8e4b86b8837e4c8cbaece7354ab2068597f5d186de5e638d71f74"
+  },
+  {
+    "kind": "trigger",
+    "name": "HordeTutorHistoryUpdate",
+    "sha256": "f7ab3bed439f601a2b4ed0f761dd9a25c2120198e634a4e2018311cda9019051"
+  },
+  {
+    "kind": "trigger",
+    "name": "SinglePlayHistoryDelete",
+    "sha256": "3d8426f81ebc97eb4d00ba32e98a970c326ae0255e3313cc8b7127292744466d"
+  },
+  {
+    "kind": "trigger",
+    "name": "SinglePlayHistoryUpdate",
+    "sha256": "ac351c0eceafc1121d85f7ffd8da7a0815134e613fbfcdd182c74c2c68cef2c0"
+  },
+  {
+    "kind": "trigger",
+    "name": "FriendCategoriesRemoved",
+    "sha256": "061b648a0bcef27409de29c67121c65fc74f96b259d0f5ed6fe3ca4b8e3ec7c1"
+  },
+  {
+    "kind": "trigger",
+    "name": "ClanLoginActivity",
+    "sha256": "941b9c15342c0565abb8182dceeb6b9e5fa4bd7f9a52442747e7941368c37633"
+  },
+  {
+    "kind": "trigger",
+    "name": "ClanMatchActivity",
+    "sha256": "92ce36ce6b2270ed6b49cf5103f37dae7a0dd320371ecd23b92dd039c793a9b7"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeMedalEventInsertGuard",
+    "sha256": "d264a026265066b4acdb922f638472a342c2deff54bc011a52546677e50e9e60"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleEquipmentInsertGuard",
+    "sha256": "4e8ec053513c2b1086e9b54f1c69aac0c8a6046c6dcf5a45d871674f1030e7cc"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleEquipmentUpdateGuard",
+    "sha256": "0a303dfbf6aec33d4dd25d4098477d2253a37921cfc1a471cf6d5060dd53a637"
+  },
+  {
+    "kind": "trigger",
+    "name": "NativeTitleDebitGuard",
+    "sha256": "ea977bd5d484dbd5f4dba4778410cfccf207bdd4bbe44ebe07f97a9b60e25781"
+  },
+  {
+    "kind": "trigger",
+    "name": "ItemAttributeInsertGuard",
+    "sha256": "d37c9bac6d18b55f4256ea4da3183f3e11d1332f6f25ef791118c97a0fac5856"
+  },
+  {
+    "kind": "trigger",
+    "name": "ItemAttributeDeleteGuard",
+    "sha256": "444162cd3ebc9c3da2ab8f4922df9de98c410567610496196592d02af2fa15e2"
+  },
+  {
+    "kind": "trigger",
+    "name": "ItemAttributeUpdateGuard",
+    "sha256": "154f4dad5ed96208b7d3455d5d0e581a6223e84dc6bc3b21f796c88b05e708c5"
+  },
+  {
+    "kind": "trigger",
+    "name": "AttributedInventoryUpdateGuard",
+    "sha256": "abb6a5c810d7350f49c484686f833d2de9360715a0258ed0b540234225678a28"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeInventoryDelete",
+    "sha256": "deae8dc87519f0f5c3c57c7dc2e8c6028ffb9d8b774fb0a7c0e36c5e2ee7793f"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeInventoryInsert",
+    "sha256": "b1dc22941ebacf0a9209de392bf8ac1418cea12d8c500ce44f5d41ac882c6d45"
+  },
+  {
+    "kind": "trigger",
+    "name": "LifeInventoryUpdate",
+    "sha256": "9fab316f0aebafedae0e680b06456f4fe79a0d8db20b999acfb2a8adc82c0318"
+  }
+]

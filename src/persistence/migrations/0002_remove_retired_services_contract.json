@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "function",
+    "name": "SoftwareBlocklistAction",
+    "sha256": ""
+  },
+  {
+    "kind": "function",
+    "name": "SoftwareBlocklistBanSeconds",
+    "sha256": ""
+  },
+  {
+    "kind": "table",
+    "name": "EmailBindingSessions",
+    "sha256": ""
+  },
+  {
+    "kind": "table",
+    "name": "EmailVerificationChallenges",
+    "sha256": ""
+  },
+  {
+    "kind": "table",
+    "name": "AccountEmails",
+    "sha256": ""
+  },
+  {
+    "kind": "table",
+    "name": "ForensicsAttachments",
+    "sha256": ""
+  },
+  {
+    "kind": "table",
+    "name": "ForensicsReports",
+    "sha256": ""
+  },
+  {
+    "kind": "table",
+    "name": "SoftwareDetections",
+    "sha256": ""
+  },
+  {
+    "kind": "table",
+    "name": "SoftwareBlocklist",
+    "sha256": ""
+  }
+]

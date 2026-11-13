@@ -1,0 +1,105 @@
+name: Publish Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag with a successful Windows CI build
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Publish verified Windows package
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: read
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Require a successful CI run for the tagged commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(\.[0-9]+)?(-[A-Za-z0-9.-]+)?$ ]]
+          commit=$(git rev-parse "refs/tags/$RELEASE_TAG^{commit}")
+          run_id=$(gh api "repos/$GH_REPO/actions/workflows/windows.yml/runs?head_sha=$commit&status=success&per_page=30" \
+            --jq '[.workflow_runs[] | select(.event == "push" or .event == "workflow_dispatch")] | max_by(.id) | .id // empty')
+          if [[ -z "$run_id" ]]; then
+            echo 'The tagged commit must pass Windows CI before publication.' >&2
+            exit 1
+          fi
+          echo "SOURCE_COMMIT=$commit" >> "$GITHUB_ENV"
+          echo "CI_RUN_ID=$run_id" >> "$GITHUB_ENV"
+      - name: Download the verified CI artifact
+        shell: bash
+        run: gh run download "$CI_RUN_ID" --name Windows-x64-release --dir dist
+      - name: Verify package checksum and source commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dist
+          sha256sum --check SHA256SUMS
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          from zipfile import ZipFile
+          with ZipFile('BubbleFighter-CN0280-Server-win-x64.zip') as archive:
+              root = 'BubbleFighter-CN0280-Server-win-x64/'
+              info = json.loads(archive.read(root + 'build-info.json'))
+              assert info['source_commit'] == os.environ['SOURCE_COMMIT'], 'Source commit mismatch'
+              assert info['configuration'] == 'Release'
+              names = archive.namelist()
+              assert len(names) == len(set(names)), 'Duplicate ZIP paths'
+              assert set(names) == {root + name for name in info['files']} | {root + 'build-info.json'}, 'File inventory mismatch'
+              for name, expected in info['files'].items():
+                  assert hashlib.sha256(archive.read(root + name)).hexdigest() == expected, name
+              assert [name for name in names if name.lower().endswith('.exe')] == [root + 'BubbleFighter.Server.exe']
+              assert archive.read(root + 'config/mysql.password').decode('utf-8-sig').strip() == 'CHANGE_ME'
+              assert archive.testzip() is None
+          PY
+      - name: Publish the release and assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp .github/release-notes.md release-notes.md
+          printf '\nSource commit: `%s`\n\nCI: https://github.com/%s/actions/runs/%s\n' \
+            "$SOURCE_COMMIT" "$GH_REPO" "$CI_RUN_ID" >> release-notes.md
+          if draft=$(gh release view "$RELEASE_TAG" --json isDraft --jq .isDraft 2>/dev/null); then
+            if [[ "$draft" != true ]]; then
+              echo 'This tag already has a published release.' >&2
+              exit 1
+            fi
+          else
+            gh release create "$RELEASE_TAG" --verify-tag --draft \
+              --title "BubbleFighter CN0280 Server $RELEASE_TAG" --notes-file release-notes.md
+          fi
+          gh release upload "$RELEASE_TAG" \
+            dist/BubbleFighter-CN0280-Server-win-x64.zip dist/SHA256SUMS --clobber
+          prerelease=false
+          latest=true
+          if [[ "$RELEASE_TAG" == *-* ]]; then
+            prerelease=true
+            latest=false
+          fi
+          gh release edit "$RELEASE_TAG" --draft=false --prerelease="$prerelease" --latest="$latest" \
+            --title "BubbleFighter CN0280 Server $RELEASE_TAG" --notes-file release-notes.md

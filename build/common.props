@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BfRoot>$(MSBuildThisFileDirectory)..\</BfRoot>
+    <BfArtifacts>$(BfRoot)Artifacts\</BfArtifacts>
+    <BfDependencies Condition="'$(BfDependencies)'==''">$(BfArtifacts)Dependencies\vcpkg\x64-windows-static-md</BfDependencies>
+    <BfDependencyLib Condition="'$(Configuration)'=='Debug'">$(BfDependencies)\debug\lib</BfDependencyLib>
+    <BfDependencyLib Condition="'$(Configuration)'!='Debug'">$(BfDependencies)\lib</BfDependencyLib>
+    <OutDir>$(BfArtifacts)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(BfArtifacts)Obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <ExternalIncludePath>$(BfDependencies)\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LinkIncremental>false</LinkIncremental>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
+    <PythonForBuild Condition="'$(PythonForBuild)'==''">py -3</PythonForBuild>
+    <CL_MPCount Condition="'$(CL_MPCount)'==''">2</CL_MPCount>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(BfRoot)src;$(BfRoot)third_party\libjuice\include;$(BfRoot)third_party\libjuice\include\juice;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 /Zc:__cplusplus /bigobj /FS %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(BfDependencyLib);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Target Name="PrepareServerRuntime" AfterTargets="Build" Condition="'$(TargetName)'=='BubbleFighter.Server'">
+    <Exec Command="$(PythonForBuild) &quot;$(BfRoot)build\prepare_runtime.py&quot; --bin &quot;$(OutDir).&quot;" />
+  </Target>
+  <Target Name="CheckNativeDependencies" BeforeTargets="PrepareForBuild" Condition="'$(ConfigurationType)'!='Utility'">
+    <Error Condition="!Exists('$(BfDependencies)\include\nlohmann\json.hpp')" Text="Run build\restore_dependencies.ps1 or set BfDependencies to the x64-windows-static-md install directory." />
+  </Target>
+</Project>
